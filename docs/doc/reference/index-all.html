@@ -454,7 +454,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="com/google/android/exoplayer2/testutil/Action.WaitForIsLoading.html" title="class in com.google.android.exoplayer2.testutil"><span class="typeNameLink">Action.WaitForIsLoading</span></a> - Class in <a href="com/google/android/exoplayer2/testutil/package-summary.html">com.google.android.exoplayer2.testutil</a></dt>
 <dd>
-<div class="block">Waits for a specified loading state, returning either immediately or after a call to <a href="com/google/android/exoplayer2/Player.EventListener.html#onIsLoadingChanged(boolean)"><code>Player.EventListener.onIsLoadingChanged(boolean)</code></a>.</div>
+<div class="block">Waits for a specified loading state, returning either immediately or after a call to <a href="com/google/android/exoplayer2/Player.Listener.html#onIsLoadingChanged(boolean)"><code>Player.Listener.onIsLoadingChanged(boolean)</code></a>.</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/testutil/Action.WaitForMessage.html" title="class in com.google.android.exoplayer2.testutil"><span class="typeNameLink">Action.WaitForMessage</span></a> - Class in <a href="com/google/android/exoplayer2/testutil/package-summary.html">com.google.android.exoplayer2.testutil</a></dt>
 <dd>
@@ -466,21 +466,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="com/google/android/exoplayer2/testutil/Action.WaitForPlaybackState.html" title="class in com.google.android.exoplayer2.testutil"><span class="typeNameLink">Action.WaitForPlaybackState</span></a> - Class in <a href="com/google/android/exoplayer2/testutil/package-summary.html">com.google.android.exoplayer2.testutil</a></dt>
 <dd>
-<div class="block">Waits for a specified playback state, returning either immediately or after a call to <a href="com/google/android/exoplayer2/Player.EventListener.html#onPlaybackStateChanged(int)"><code>Player.EventListener.onPlaybackStateChanged(int)</code></a>.</div>
+<div class="block">Waits for a specified playback state, returning either immediately or after a call to <a href="com/google/android/exoplayer2/Player.Listener.html#onPlaybackStateChanged(int)"><code>Player.Listener.onPlaybackStateChanged(int)</code></a>.</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/testutil/Action.WaitForPlayWhenReady.html" title="class in com.google.android.exoplayer2.testutil"><span class="typeNameLink">Action.WaitForPlayWhenReady</span></a> - Class in <a href="com/google/android/exoplayer2/testutil/package-summary.html">com.google.android.exoplayer2.testutil</a></dt>
 <dd>
 <div class="block">Waits for a specified playWhenReady value, returning either immediately or after a call to
- <a href="com/google/android/exoplayer2/Player.EventListener.html#onPlayWhenReadyChanged(boolean,int)"><code>Player.EventListener.onPlayWhenReadyChanged(boolean, int)</code></a>.</div>
+ <a href="com/google/android/exoplayer2/Player.Listener.html#onPlayWhenReadyChanged(boolean,int)"><code>Player.Listener.onPlayWhenReadyChanged(boolean, int)</code></a>.</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/testutil/Action.WaitForPositionDiscontinuity.html" title="class in com.google.android.exoplayer2.testutil"><span class="typeNameLink">Action.WaitForPositionDiscontinuity</span></a> - Class in <a href="com/google/android/exoplayer2/testutil/package-summary.html">com.google.android.exoplayer2.testutil</a></dt>
 <dd>
-<div class="block">Waits for <a href="com/google/android/exoplayer2/Player.EventListener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,int)"><code>Player.EventListener.onPositionDiscontinuity(Player.PositionInfo,
+<div class="block">Waits for <a href="com/google/android/exoplayer2/Player.Listener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,int)"><code>Player.Listener.onPositionDiscontinuity(Player.PositionInfo,
  Player.PositionInfo, int)</code></a>.</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/testutil/Action.WaitForTimelineChanged.html" title="class in com.google.android.exoplayer2.testutil"><span class="typeNameLink">Action.WaitForTimelineChanged</span></a> - Class in <a href="com/google/android/exoplayer2/testutil/package-summary.html">com.google.android.exoplayer2.testutil</a></dt>
 <dd>
-<div class="block">Waits for <a href="com/google/android/exoplayer2/Player.EventListener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,int)"><code>Player.EventListener.onTimelineChanged(Timeline, int)</code></a>.</div>
+<div class="block">Waits for <a href="com/google/android/exoplayer2/Player.Listener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,int)"><code>Player.Listener.onTimelineChanged(Timeline, int)</code></a>.</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/offline/ActionFileUpgradeUtil.html" title="class in com.google.android.exoplayer2.offline"><span class="typeNameLink">ActionFileUpgradeUtil</span></a> - Class in <a href="com/google/android/exoplayer2/offline/package-summary.html">com.google.android.exoplayer2.offline</a></dt>
 <dd>
@@ -665,7 +665,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#addAudioListener(com.google.android.exoplayer2.audio.AudioListener)">addAudioListener(AudioListener)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ExoPlayer.html#addAudioOffloadListener(com.google.android.exoplayer2.ExoPlayer.AudioOffloadListener)">addAudioOffloadListener(ExoPlayer.AudioOffloadListener)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/ExoPlayer.html" title="interface in com.google.android.exoplayer2">ExoPlayer</a></dt>
 <dd>
 <div class="block">Adds a listener to receive audio offload events.</div>
@@ -681,7 +683,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#addDeviceListener(com.google.android.exoplayer2.device.DeviceListener)">addDeviceListener(DeviceListener)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/offline/DownloadManager.html#addDownload(com.google.android.exoplayer2.offline.DownloadRequest)">addDownload(DownloadRequest)</a></span> - Method in class com.google.android.exoplayer2.offline.<a href="com/google/android/exoplayer2/offline/DownloadManager.html" title="class in com.google.android.exoplayer2.offline">DownloadManager</a></dt>
 <dd>
 <div class="block">Adds a download defined by the given request.</div>
@@ -771,7 +775,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#addListener(com.google.android.exoplayer2.Player.EventListener)">addListener(Player.EventListener)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/StubExoPlayer.html#addListener(com.google.android.exoplayer2.Player.EventListener)">addListener(Player.EventListener)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/StubExoPlayer.html" title="class in com.google.android.exoplayer2.testutil">StubExoPlayer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html#addListener(com.google.android.exoplayer2.Player.Listener)">addListener(Player.Listener)</a></span> - Method in class com.google.android.exoplayer2.ext.cast.<a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html" title="class in com.google.android.exoplayer2.ext.cast">CastPlayer</a></dt>
@@ -908,7 +914,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#addMetadataOutput(com.google.android.exoplayer2.metadata.MetadataOutput)">addMetadataOutput(MetadataOutput)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/text/span/SpanUtil.html#addOrReplaceSpan(android.text.Spannable,java.lang.Object,int,int,int)">addOrReplaceSpan(Spannable, Object, int, int, int)</a></span> - Static method in class com.google.android.exoplayer2.text.span.<a href="com/google/android/exoplayer2/text/span/SpanUtil.html" title="class in com.google.android.exoplayer2.text.span">SpanUtil</a></dt>
 <dd>
 <div class="block">Adds <code>span</code> to <code>spannable</code> between <code>start</code> and <code>end</code>, removing any
@@ -934,7 +942,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#addTextOutput(com.google.android.exoplayer2.text.TextOutput)">addTextOutput(TextOutput)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/Dumper.html#addTime(java.lang.String,long)">addTime(String, long)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/Dumper.html" title="class in com.google.android.exoplayer2.testutil">Dumper</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/offline/DownloadHelper.html#addTrackSelection(int,com.google.android.exoplayer2.trackselection.DefaultTrackSelector.Parameters)">addTrackSelection(int, DefaultTrackSelector.Parameters)</a></span> - Method in class com.google.android.exoplayer2.offline.<a href="com/google/android/exoplayer2/offline/DownloadHelper.html" title="class in com.google.android.exoplayer2.offline">DownloadHelper</a></dt>
@@ -979,7 +989,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#addVideoListener(com.google.android.exoplayer2.video.VideoListener)">addVideoListener(VideoListener)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView.html#addVideoSurfaceListener(com.google.android.exoplayer2.video.spherical.SphericalGLSurfaceView.VideoSurfaceListener)">addVideoSurfaceListener(SphericalGLSurfaceView.VideoSurfaceListener)</a></span> - Method in class com.google.android.exoplayer2.video.spherical.<a href="com/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView.html" title="class in com.google.android.exoplayer2.video.spherical">SphericalGLSurfaceView</a></dt>
 <dd>
 <div class="block">Adds a <a href="com/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView.VideoSurfaceListener.html" title="interface in com.google.android.exoplayer2.video.spherical"><code>SphericalGLSurfaceView.VideoSurfaceListener</code></a>.</div>
@@ -1634,12 +1646,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#assertMediaItemsTransitionedSame(com.google.android.exoplayer2.MediaItem...)">assertMediaItemsTransitionedSame(MediaItem...)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>
-<div class="block">Asserts that the media items reported by <a href="com/google/android/exoplayer2/Player.EventListener.html#onMediaItemTransition(com.google.android.exoplayer2.MediaItem,int)"><code>Player.EventListener.onMediaItemTransition(MediaItem, int)</code></a> are the same as the provided media
+<div class="block">Asserts that the media items reported by <a href="com/google/android/exoplayer2/Player.Listener.html#onMediaItemTransition(com.google.android.exoplayer2.MediaItem,int)"><code>Player.Listener.onMediaItemTransition(MediaItem, int)</code></a> are the same as the provided media
  items.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#assertMediaItemsTransitionReasonsEqual(java.lang.Integer...)">assertMediaItemsTransitionReasonsEqual(Integer...)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>
-<div class="block">Asserts that the media item transition reasons reported by <a href="com/google/android/exoplayer2/Player.EventListener.html#onMediaItemTransition(com.google.android.exoplayer2.MediaItem,int)"><code>Player.EventListener.onMediaItemTransition(MediaItem, int)</code></a> are the same as the provided reasons.</div>
+<div class="block">Asserts that the media item transition reasons reported by <a href="com/google/android/exoplayer2/Player.Listener.html#onMediaItemTransition(com.google.android.exoplayer2.MediaItem,int)"><code>Player.Listener.onMediaItemTransition(MediaItem, int)</code></a> are the same as the provided reasons.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeMediaSource.html#assertMediaPeriodCreated(com.google.android.exoplayer2.source.MediaSource.MediaPeriodId)">assertMediaPeriodCreated(MediaSource.MediaPeriodId)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeMediaSource.html" title="class in com.google.android.exoplayer2.testutil">FakeMediaSource</a></dt>
 <dd>
@@ -1652,7 +1664,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#assertNoPositionDiscontinuities()">assertNoPositionDiscontinuities()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>
-<div class="block">Asserts that <a href="com/google/android/exoplayer2/Player.EventListener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,int)"><code>Player.EventListener.onPositionDiscontinuity(Player.PositionInfo,
+<div class="block">Asserts that <a href="com/google/android/exoplayer2/Player.Listener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,int)"><code>Player.Listener.onPositionDiscontinuity(Player.PositionInfo,
  Player.PositionInfo, int)</code></a> was not called.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/MediaSourceTestRunner.html#assertNoTimelineChange()">assertNoTimelineChange()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/MediaSourceTestRunner.html" title="class in com.google.android.exoplayer2.testutil">MediaSourceTestRunner</a></dt>
@@ -1697,7 +1709,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#assertPlaybackStatesEqual(java.lang.Integer...)">assertPlaybackStatesEqual(Integer...)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>
-<div class="block">Asserts that the playback states reported by <a href="com/google/android/exoplayer2/Player.EventListener.html#onPlaybackStateChanged(int)"><code>Player.EventListener.onPlaybackStateChanged(int)</code></a> are equal to the provided playback states.</div>
+<div class="block">Asserts that the playback states reported by <a href="com/google/android/exoplayer2/Player.Listener.html#onPlaybackStateChanged(int)"><code>Player.Listener.onPlaybackStateChanged(int)</code></a> are equal to the provided playback states.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#assertPlayedPeriodIndices(java.lang.Integer...)">assertPlayedPeriodIndices(Integer...)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>
@@ -1705,7 +1717,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#assertPositionDiscontinuityReasonsEqual(java.lang.Integer...)">assertPositionDiscontinuityReasonsEqual(Integer...)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>
-<div class="block">Asserts that the discontinuity reasons reported by <a href="com/google/android/exoplayer2/Player.EventListener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,int)"><code>Player.EventListener.onPositionDiscontinuity(Player.PositionInfo, Player.PositionInfo, int)</code></a> are
+<div class="block">Asserts that the discontinuity reasons reported by <a href="com/google/android/exoplayer2/Player.Listener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,int)"><code>Player.Listener.onPositionDiscontinuity(Player.PositionInfo, Player.PositionInfo, int)</code></a> are
  equal to the provided values.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/MediaSourceTestRunner.html#assertPrepareAndReleaseAllPeriods()">assertPrepareAndReleaseAllPeriods()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/MediaSourceTestRunner.html" title="class in com.google.android.exoplayer2.testutil">MediaSourceTestRunner</a></dt>
@@ -1760,12 +1772,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#assertTimelineChangeReasonsEqual(java.lang.Integer...)">assertTimelineChangeReasonsEqual(Integer...)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>
-<div class="block">Asserts that the timeline change reasons reported by <a href="com/google/android/exoplayer2/Player.EventListener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,int)"><code>Player.EventListener.onTimelineChanged(Timeline, int)</code></a> are equal to the provided timeline change
+<div class="block">Asserts that the timeline change reasons reported by <a href="com/google/android/exoplayer2/Player.Listener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,int)"><code>Player.Listener.onTimelineChanged(Timeline, int)</code></a> are equal to the provided timeline change
  reasons.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#assertTimelinesSame(com.google.android.exoplayer2.Timeline...)">assertTimelinesSame(Timeline...)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>
-<div class="block">Asserts that the timelines reported by <a href="com/google/android/exoplayer2/Player.EventListener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,int)"><code>Player.EventListener.onTimelineChanged(Timeline, int)</code></a>
+<div class="block">Asserts that the timelines reported by <a href="com/google/android/exoplayer2/Player.Listener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,int)"><code>Player.Listener.onTimelineChanged(Timeline, int)</code></a>
  are the same to the provided timelines.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DecoderCountersUtil.html#assertTotalBufferCount(java.lang.String,com.google.android.exoplayer2.decoder.DecoderCounters,int,int)">assertTotalBufferCount(String, DecoderCounters, int, int)</a></span> - Static method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DecoderCountersUtil.html" title="class in com.google.android.exoplayer2.testutil">DecoderCountersUtil</a></dt>
@@ -1776,7 +1788,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#assertTrackGroupsEqual(com.google.android.exoplayer2.source.TrackGroupArray)">assertTrackGroupsEqual(TrackGroupArray)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>
-<div class="block">Asserts that the last track group array reported by <a href="com/google/android/exoplayer2/Player.EventListener.html#onTracksChanged(com.google.android.exoplayer2.source.TrackGroupArray,com.google.android.exoplayer2.trackselection.TrackSelectionArray)"><code>Player.EventListener.onTracksChanged(TrackGroupArray, TrackSelectionArray)</code></a> is equal to the provided
+<div class="block">Asserts that the last track group array reported by <a href="com/google/android/exoplayer2/Player.Listener.html#onTracksChanged(com.google.android.exoplayer2.source.TrackGroupArray,com.google.android.exoplayer2.trackselection.TrackSelectionArray)"><code>Player.Listener.onTracksChanged(TrackGroupArray, TrackSelectionArray)</code></a> is equal to the provided
  track group array.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DecoderCountersUtil.html#assertVideoFrameProcessingOffsetSampleCount(java.lang.String,com.google.android.exoplayer2.decoder.DecoderCounters,int,int)">assertVideoFrameProcessingOffsetSampleCount(String, DecoderCounters, int, int)</a></span> - Static method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DecoderCountersUtil.html" title="class in com.google.android.exoplayer2.testutil">DecoderCountersUtil</a></dt>
@@ -2580,6 +2592,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExtractorAsserts.AssertionConfig.Builder.html#build()">build()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExtractorAsserts.AssertionConfig.Builder.html" title="class in com.google.android.exoplayer2.testutil">ExtractorAsserts.AssertionConfig.Builder</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html#build()">build()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html" title="class in com.google.android.exoplayer2.testutil">FakeExoMediaDrm.Builder</a></dt>
+<dd>
+<div class="block">Returns a <a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html" title="class in com.google.android.exoplayer2.testutil"><code>FakeExoMediaDrm</code></a> instance with an initial reference count of 1.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExtractorInput.Builder.html#build()">build()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExtractorInput.Builder.html" title="class in com.google.android.exoplayer2.testutil">FakeExtractorInput.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/TestExoPlayerBuilder.html#build()">build()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/TestExoPlayerBuilder.html" title="class in com.google.android.exoplayer2.testutil">TestExoPlayerBuilder</a></dt>
@@ -2726,6 +2742,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExtractorAsserts.AssertionConfig.Builder.html#%3Cinit%3E()">Builder()</a></span> - Constructor for class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExtractorAsserts.AssertionConfig.Builder.html" title="class in com.google.android.exoplayer2.testutil">ExtractorAsserts.AssertionConfig.Builder</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html#%3Cinit%3E()">Builder()</a></span> - Constructor for class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html" title="class in com.google.android.exoplayer2.testutil">FakeExoMediaDrm.Builder</a></dt>
+<dd>
+<div class="block">Constructs an instance.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExtractorInput.Builder.html#%3Cinit%3E()">Builder()</a></span> - Constructor for class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExtractorInput.Builder.html" title="class in com.google.android.exoplayer2.testutil">FakeExtractorInput.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/WebServerDispatcher.Resource.Builder.html#%3Cinit%3E()">Builder()</a></span> - Constructor for class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/WebServerDispatcher.Resource.Builder.html" title="class in com.google.android.exoplayer2.testutil">WebServerDispatcher.Resource.Builder</a></dt>
@@ -7570,6 +7590,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">The default timeout applied when calling <a href="com/google/android/exoplayer2/robolectric/RobolectricUtil.html#runMainLooperUntil(com.google.common.base.Supplier)"><code>RobolectricUtil.runMainLooperUntil(Supplier)</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.html#DEFAULT_TIMEOUT_MS">DEFAULT_TIMEOUT_MS</a></span> - Static variable in class com.google.android.exoplayer2.source.rtsp.<a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.html" title="class in com.google.android.exoplayer2.source.rtsp">RtspMediaSource</a></dt>
+<dd>
+<div class="block">The default value for <a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.Factory.html#setTimeoutMs(long)"><code>RtspMediaSource.Factory.setTimeoutMs(long)</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/extractor/ts/TsExtractor.html#DEFAULT_TIMESTAMP_SEARCH_BYTES">DEFAULT_TIMESTAMP_SEARCH_BYTES</a></span> - Static variable in class com.google.android.exoplayer2.extractor.ts.<a href="com/google/android/exoplayer2/extractor/ts/TsExtractor.html" title="class in com.google.android.exoplayer2.extractor.ts">TsExtractor</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/DefaultTimeBar.html#DEFAULT_TOUCH_TARGET_HEIGHT_DP">DEFAULT_TOUCH_TARGET_HEIGHT_DP</a></span> - Static variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/DefaultTimeBar.html" title="class in com.google.android.exoplayer2.ui">DefaultTimeBar</a></dt>
@@ -9330,6 +9354,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/util/Log.html#e(java.lang.String,java.lang.String,java.lang.Throwable)">e(String, String, Throwable)</a></span> - Static method in class com.google.android.exoplayer2.util.<a href="com/google/android/exoplayer2/util/Log.html" title="class in com.google.android.exoplayer2.util">Log</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/Ac3Util.html#E_AC_3_CODEC_STRING">E_AC_3_CODEC_STRING</a></span> - Static variable in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/Ac3Util.html" title="class in com.google.android.exoplayer2.audio">Ac3Util</a></dt>
+<dd>
+<div class="block">A non-standard codec string for E-AC-3.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/Ac3Util.html#E_AC3_MAX_RATE_BYTES_PER_SECOND">E_AC3_MAX_RATE_BYTES_PER_SECOND</a></span> - Static variable in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/Ac3Util.html" title="class in com.google.android.exoplayer2.audio">Ac3Util</a></dt>
 <dd>
 <div class="block">Maximum rate for an E-AC-3 audio stream, in bytes per second.</div>
@@ -10727,6 +10755,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Factory for arrays of <a href="com/google/android/exoplayer2/extractor/Extractor.html" title="interface in com.google.android.exoplayer2.extractor"><code>Extractor</code></a> instances.</div>
 </dd>
+<dt><a href="com/google/android/exoplayer2/extractor/ExtractorUtil.html" title="class in com.google.android.exoplayer2.extractor"><span class="typeNameLink">ExtractorUtil</span></a> - Class in <a href="com/google/android/exoplayer2/extractor/package-summary.html">com.google.android.exoplayer2.extractor</a></dt>
+<dd>
+<div class="block">Extractor related utility methods.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/TestUtil.html#extractSeekMap(com.google.android.exoplayer2.extractor.Extractor,com.google.android.exoplayer2.testutil.FakeExtractorOutput,com.google.android.exoplayer2.upstream.DataSource,android.net.Uri)">extractSeekMap(Extractor, FakeExtractorOutput, DataSource, Uri)</a></span> - Static method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/TestUtil.html" title="class in com.google.android.exoplayer2.testutil">TestUtil</a></dt>
 <dd>
 <div class="block">Reads from the given input using the given <a href="com/google/android/exoplayer2/extractor/Extractor.html" title="interface in com.google.android.exoplayer2.extractor"><code>Extractor</code></a>, until it can produce the <a href="com/google/android/exoplayer2/extractor/SeekMap.html" title="interface in com.google.android.exoplayer2.extractor"><code>SeekMap</code></a> and all of the track formats have been identified, or until the extractor encounters
@@ -11091,13 +11123,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html#%3Cinit%3E()">FakeExoMediaDrm()</a></span> - Constructor for class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html" title="class in com.google.android.exoplayer2.testutil">FakeExoMediaDrm</a></dt>
 <dd>
-<div class="block">Constructs an instance that returns random and unique <code>sessionIds</code> for subsequent calls
- to <a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html#openSession()"><code>FakeExoMediaDrm.openSession()</code></a> with no limit on the number of concurrent open sessions.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html" title="class in com.google.android.exoplayer2.testutil"><code>FakeExoMediaDrm.Builder</code></a> instead.</div>
+</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html#%3Cinit%3E(int)">FakeExoMediaDrm(int)</a></span> - Constructor for class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html" title="class in com.google.android.exoplayer2.testutil">FakeExoMediaDrm</a></dt>
 <dd>
-<div class="block">Constructs an instance that returns random and unique <code>sessionIds</code> for subsequent calls
- to <a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html#openSession()"><code>FakeExoMediaDrm.openSession()</code></a> with a limit on the number of concurrent open sessions.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html" title="class in com.google.android.exoplayer2.testutil"><code>FakeExoMediaDrm.Builder</code></a> instead.</div>
+</div>
+</dd>
+<dt><a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html" title="class in com.google.android.exoplayer2.testutil"><span class="typeNameLink">FakeExoMediaDrm.Builder</span></a> - Class in <a href="com/google/android/exoplayer2/testutil/package-summary.html">com.google.android.exoplayer2.testutil</a></dt>
+<dd>
+<div class="block">Builder for <a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html" title="class in com.google.android.exoplayer2.testutil"><code>FakeExoMediaDrm</code></a> instances.</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.LicenseServer.html" title="class in com.google.android.exoplayer2.testutil"><span class="typeNameLink">FakeExoMediaDrm.LicenseServer</span></a> - Class in <a href="com/google/android/exoplayer2/testutil/package-summary.html">com.google.android.exoplayer2.testutil</a></dt>
 <dd>
@@ -17335,6 +17373,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Returns whether the ad group at index <code>adGroupIndex</code> has been played.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/hls/playlist/HlsMediaPlaylist.html#hasPositiveStartOffset">hasPositiveStartOffset</a></span> - Variable in class com.google.android.exoplayer2.source.hls.playlist.<a href="com/google/android/exoplayer2/source/hls/playlist/HlsMediaPlaylist.html" title="class in com.google.android.exoplayer2.source.hls.playlist">HlsMediaPlaylist</a></dt>
+<dd>
+<div class="block">Whether the <a href="com/google/android/exoplayer2/source/hls/playlist/HlsMediaPlaylist.html#startOffsetUs"><code>HlsMediaPlaylist.startOffsetUs</code></a> was explicitly defined by #EXT-X-START as a positive value
+ or zero.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/BasePlayer.html#hasPrevious()">hasPrevious()</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/BasePlayer.html" title="class in com.google.android.exoplayer2">BasePlayer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.html#hasPrevious()">hasPrevious()</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.html" title="interface in com.google.android.exoplayer2">Player</a></dt>
@@ -19071,6 +19114,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/BaseRenderer.html#isSourceReady()">isSourceReady()</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/BaseRenderer.html" title="class in com.google.android.exoplayer2">BaseRenderer</a></dt>
 <dd>
 <div class="block">Returns whether the upstream source is ready.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/extractor/ts/TsUtil.html#isStartOfTsPacket(byte%5B%5D,int,int,int)">isStartOfTsPacket(byte[], int, int, int)</a></span> - Static method in class com.google.android.exoplayer2.extractor.ts.<a href="com/google/android/exoplayer2/extractor/ts/TsUtil.html" title="class in com.google.android.exoplayer2.extractor.ts">TsUtil</a></dt>
+<dd>
+<div class="block">Returns whether a TS packet starts at <code>searchPosition</code> according to the MPEG-TS
+ synchronization recommendations.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/util/XmlPullParserUtil.html#isStartTag(org.xmlpull.v1.XmlPullParser)">isStartTag(XmlPullParser)</a></span> - Static method in class com.google.android.exoplayer2.util.<a href="com/google/android/exoplayer2/util/XmlPullParserUtil.html" title="class in com.google.android.exoplayer2.util">XmlPullParserUtil</a></dt>
 <dd>
@@ -21894,6 +21942,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the audio attributes change.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onAudioAttributesChanged(com.google.android.exoplayer2.audio.AudioAttributes)">onAudioAttributesChanged(AudioAttributes)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/AudioCapabilitiesReceiver.Listener.html#onAudioCapabilitiesChanged(com.google.android.exoplayer2.audio.AudioCapabilities)">onAudioCapabilitiesChanged(AudioCapabilities)</a></span> - Method in interface com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/AudioCapabilitiesReceiver.Listener.html" title="interface in com.google.android.exoplayer2.audio">AudioCapabilitiesReceiver.Listener</a></dt>
 <dd>
 <div class="block">Called when the audio capabilities change.</div>
@@ -22009,6 +22059,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the audio session ID changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onAudioSessionIdChanged(int)">onAudioSessionIdChanged(int)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html#onAudioSessionIdChanged(com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime,int)">onAudioSessionIdChanged(AnalyticsListener.EventTime, int)</a></span> - Method in interface com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html" title="interface in com.google.android.exoplayer2.analytics">AnalyticsListener</a></dt>
 <dd>
 <div class="block">Called when the audio session ID changes.</div>
@@ -22047,6 +22099,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Called when the value returned from <a href="com/google/android/exoplayer2/Player.html#isCommandAvailable(int)"><code>Player.isCommandAvailable(int)</code></a> changes for at least one
  <a href="com/google/android/exoplayer2/Player.Command.html" title="annotation in com.google.android.exoplayer2"><code>Player.Command</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onAvailableCommandsChanged(com.google.android.exoplayer2.Player.Commands)">onAvailableCommandsChanged(Player.Commands)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html#onBandwidthEstimate(com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime,int,long,long)">onBandwidthEstimate(AnalyticsListener.EventTime, int, long, long)</a></span> - Method in interface com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html" title="interface in com.google.android.exoplayer2.analytics">AnalyticsListener</a></dt>
 <dd>
 <div class="block">Called when the bandwidth estimate for the current data source has been updated.</div>
@@ -22326,11 +22380,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the device information changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onDeviceInfoChanged(com.google.android.exoplayer2.device.DeviceInfo)">onDeviceInfoChanged(DeviceInfo)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/device/DeviceListener.html#onDeviceVolumeChanged(int,boolean)">onDeviceVolumeChanged(int, boolean)</a></span> - Method in interface com.google.android.exoplayer2.device.<a href="com/google/android/exoplayer2/device/DeviceListener.html" title="interface in com.google.android.exoplayer2.device">DeviceListener</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the device volume or mute state changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onDeviceVolumeChanged(int,boolean)">onDeviceVolumeChanged(int, boolean)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/DecoderAudioRenderer.html#onDisabled()">onDisabled()</a></span> - Method in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/DecoderAudioRenderer.html" title="class in com.google.android.exoplayer2.audio">DecoderAudioRenderer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/MediaCodecAudioRenderer.html#onDisabled()">onDisabled()</a></span> - Method in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/MediaCodecAudioRenderer.html" title="class in com.google.android.exoplayer2.audio">MediaCodecAudioRenderer</a></dt>
@@ -22573,6 +22631,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when one or more player states changed.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)">onEvents(Player, Player.Events)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ExoPlayer.AudioOffloadListener.html#onExperimentalOffloadSchedulingEnabledChanged(boolean)">onExperimentalOffloadSchedulingEnabledChanged(boolean)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/ExoPlayer.AudioOffloadListener.html" title="interface in com.google.android.exoplayer2">ExoPlayer.AudioOffloadListener</a></dt>
 <dd>
 <div class="block">Called when the player has started or stopped offload scheduling using <a href="com/google/android/exoplayer2/ExoPlayer.html#experimentalSetOffloadSchedulingEnabled(boolean)"><code>ExoPlayer.experimentalSetOffloadSchedulingEnabled(boolean)</code></a>.</div>
@@ -22669,6 +22729,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the player starts or stops loading the source.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onIsLoadingChanged(boolean)">onIsLoadingChanged(boolean)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html#onIsLoadingChanged(com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime,boolean)">onIsLoadingChanged(AnalyticsListener.EventTime, boolean)</a></span> - Method in interface com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html" title="interface in com.google.android.exoplayer2.analytics">AnalyticsListener</a></dt>
 <dd>
 <div class="block">Called when the player starts or stops loading data from a source.</div>
@@ -22682,6 +22744,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the value of <a href="com/google/android/exoplayer2/Player.html#isPlaying()"><code>Player.isPlaying()</code></a> changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onIsPlayingChanged(boolean)">onIsPlayingChanged(boolean)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html#onIsPlayingChanged(com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime,boolean)">onIsPlayingChanged(AnalyticsListener.EventTime, boolean)</a></span> - Method in interface com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html" title="interface in com.google.android.exoplayer2.analytics">AnalyticsListener</a></dt>
 <dd>
 <div class="block">Called when the player starts or stops playing.</div>
@@ -22823,6 +22887,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Called when playback transitions to a media item or starts repeating a media item according
  to the current <a href="com/google/android/exoplayer2/Player.html#getRepeatMode()"><code>repeat mode</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onMediaItemTransition(com.google.android.exoplayer2.MediaItem,int)">onMediaItemTransition(MediaItem, int)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#onMediaItemTransition(com.google.android.exoplayer2.MediaItem,int)">onMediaItemTransition(MediaItem, int)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html#onMediaMetadataChanged(com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime,com.google.android.exoplayer2.MediaMetadata)">onMediaMetadataChanged(AnalyticsListener.EventTime, MediaMetadata)</a></span> - Method in interface com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html" title="interface in com.google.android.exoplayer2.analytics">AnalyticsListener</a></dt>
@@ -22836,6 +22902,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the combined <a href="com/google/android/exoplayer2/MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a> changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onMediaMetadataChanged(com.google.android.exoplayer2.MediaMetadata)">onMediaMetadataChanged(MediaMetadata)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ActionSchedule.PlayerTarget.Callback.html#onMessageArrived()">onMessageArrived()</a></span> - Method in interface com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ActionSchedule.PlayerTarget.Callback.html" title="interface in com.google.android.exoplayer2.testutil">ActionSchedule.PlayerTarget.Callback</a></dt>
 <dd>
 <div class="block">Notifies about the arrival of the message.</div>
@@ -22915,6 +22983,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the current playback parameters change.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onPlaybackParametersChanged(com.google.android.exoplayer2.PlaybackParameters)">onPlaybackParametersChanged(PlaybackParameters)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeTrackSelection.html#onPlaybackSpeed(float)">onPlaybackSpeed(float)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeTrackSelection.html" title="class in com.google.android.exoplayer2.testutil">FakeTrackSelection</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/AdaptiveTrackSelection.html#onPlaybackSpeed(float)">onPlaybackSpeed(float)</a></span> - Method in class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/AdaptiveTrackSelection.html" title="class in com.google.android.exoplayer2.trackselection">AdaptiveTrackSelection</a></dt>
@@ -22936,6 +23006,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the value returned from <a href="com/google/android/exoplayer2/Player.html#getPlaybackState()"><code>Player.getPlaybackState()</code></a> changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onPlaybackStateChanged(int)">onPlaybackStateChanged(int)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#onPlaybackStateChanged(int)">onPlaybackStateChanged(int)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/util/DebugTextViewHelper.html#onPlaybackStateChanged(int)">onPlaybackStateChanged(int)</a></span> - Method in class com.google.android.exoplayer2.util.<a href="com/google/android/exoplayer2/util/DebugTextViewHelper.html" title="class in com.google.android.exoplayer2.util">DebugTextViewHelper</a></dt>
@@ -22957,6 +23029,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the value returned from <a href="com/google/android/exoplayer2/Player.html#getPlaybackSuppressionReason()"><code>Player.getPlaybackSuppressionReason()</code></a> changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onPlaybackSuppressionReasonChanged(int)">onPlaybackSuppressionReasonChanged(int)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html#onPlaybackSuppressionReasonChanged(com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime,int)">onPlaybackSuppressionReasonChanged(AnalyticsListener.EventTime, int)</a></span> - Method in interface com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html" title="interface in com.google.android.exoplayer2.analytics">AnalyticsListener</a></dt>
 <dd>
 <div class="block">Called when playback suppression reason changed.</div>
@@ -22976,6 +23050,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when an error occurs.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onPlayerError(com.google.android.exoplayer2.ExoPlaybackException)">onPlayerError(ExoPlaybackException)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#onPlayerError(com.google.android.exoplayer2.ExoPlaybackException)">onPlayerError(ExoPlaybackException)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoHostedTest.html#onPlayerErrorInternal(com.google.android.exoplayer2.ExoPlaybackException)">onPlayerErrorInternal(ExoPlaybackException)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoHostedTest.html" title="class in com.google.android.exoplayer2.testutil">ExoHostedTest</a></dt>
@@ -23023,6 +23099,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the value returned from <a href="com/google/android/exoplayer2/Player.html#getPlayWhenReady()"><code>Player.getPlayWhenReady()</code></a> changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onPlayWhenReadyChanged(boolean,int)">onPlayWhenReadyChanged(boolean, int)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/util/DebugTextViewHelper.html#onPlayWhenReadyChanged(boolean,int)">onPlayWhenReadyChanged(boolean, int)</a></span> - Method in class com.google.android.exoplayer2.util.<a href="com/google/android/exoplayer2/util/DebugTextViewHelper.html" title="class in com.google.android.exoplayer2.util">DebugTextViewHelper</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html#onPlayWhenReadyChanged(com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime,boolean,int)">onPlayWhenReadyChanged(AnalyticsListener.EventTime, boolean, int)</a></span> - Method in interface com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html" title="interface in com.google.android.exoplayer2.analytics">AnalyticsListener</a></dt>
@@ -23079,6 +23157,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when a position discontinuity occurs.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,int)">onPositionDiscontinuity(Player.PositionInfo, Player.PositionInfo, int)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,int)">onPositionDiscontinuity(Player.PositionInfo, Player.PositionInfo, int)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/util/DebugTextViewHelper.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,int)">onPositionDiscontinuity(Player.PositionInfo, Player.PositionInfo, int)</a></span> - Method in class com.google.android.exoplayer2.util.<a href="com/google/android/exoplayer2/util/DebugTextViewHelper.html" title="class in com.google.android.exoplayer2.util">DebugTextViewHelper</a></dt>
@@ -23258,6 +23338,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/mediasession/TimelineQueueEditor.html#onRemoveQueueItem(com.google.android.exoplayer2.Player,android.support.v4.media.MediaDescriptionCompat)">onRemoveQueueItem(Player, MediaDescriptionCompat)</a></span> - Method in class com.google.android.exoplayer2.ext.mediasession.<a href="com/google/android/exoplayer2/ext/mediasession/TimelineQueueEditor.html" title="class in com.google.android.exoplayer2.ext.mediasession">TimelineQueueEditor</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onRenderedFirstFrame()">onRenderedFirstFrame()</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/video/VideoListener.html#onRenderedFirstFrame()">onRenderedFirstFrame()</a></span> - Method in interface com.google.android.exoplayer2.video.<a href="com/google/android/exoplayer2/video/VideoListener.html" title="interface in com.google.android.exoplayer2.video">VideoListener</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
@@ -23291,6 +23373,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the value of <a href="com/google/android/exoplayer2/Player.html#getRepeatMode()"><code>Player.getRepeatMode()</code></a> changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onRepeatModeChanged(int)">onRepeatModeChanged(int)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html#onRepeatModeChanged(com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime,int)">onRepeatModeChanged(AnalyticsListener.EventTime, int)</a></span> - Method in interface com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html" title="interface in com.google.android.exoplayer2.analytics">AnalyticsListener</a></dt>
 <dd>
 <div class="block">Called when the repeat mode changed.</div>
@@ -23446,6 +23530,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the value of <a href="com/google/android/exoplayer2/Player.html#getShuffleModeEnabled()"><code>Player.getShuffleModeEnabled()</code></a> changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onShuffleModeEnabledChanged(boolean)">onShuffleModeEnabledChanged(boolean)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/media2/SessionCallbackBuilder.SkipCallback.html#onSkipBackward(androidx.media2.session.MediaSession,androidx.media2.session.MediaSession.ControllerInfo)">onSkipBackward(MediaSession, MediaSession.ControllerInfo)</a></span> - Method in interface com.google.android.exoplayer2.ext.media2.<a href="com/google/android/exoplayer2/ext/media2/SessionCallbackBuilder.SkipCallback.html" title="interface in com.google.android.exoplayer2.ext.media2">SessionCallbackBuilder.SkipCallback</a></dt>
 <dd>
 <div class="block">Called when the specified controller has sent skip backward.</div>
@@ -23469,6 +23555,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Called when skipping silences is enabled or disabled.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onSkipSilenceEnabledChanged(boolean)">onSkipSilenceEnabledChanged(boolean)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html#onSkipSilenceEnabledChanged(com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime,boolean)">onSkipSilenceEnabledChanged(AnalyticsListener.EventTime, boolean)</a></span> - Method in interface com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html" title="interface in com.google.android.exoplayer2.analytics">AnalyticsListener</a></dt>
 <dd>
 <div class="block">Called when skipping silences is enabled or disabled in the audio stream.</div>
@@ -23588,6 +23676,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the static metadata changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onStaticMetadataChanged(java.util.List)">onStaticMetadataChanged(List&lt;Metadata&gt;)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/HostActivity.html#onStop()">onStop()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/HostActivity.html" title="class in com.google.android.exoplayer2.testutil">HostActivity</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/scheduler/PlatformScheduler.PlatformSchedulerService.html#onStopJob(android.app.job.JobParameters)">onStopJob(JobParameters)</a></span> - Method in class com.google.android.exoplayer2.scheduler.<a href="com/google/android/exoplayer2/scheduler/PlatformScheduler.PlatformSchedulerService.html" title="class in com.google.android.exoplayer2.scheduler">PlatformScheduler.PlatformSchedulerService</a></dt>
@@ -23647,6 +23737,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Called each time there's a change in the size of the surface onto which the video is being
  rendered.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onSurfaceSizeChanged(int,int)">onSurfaceSizeChanged(int, int)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/video/VideoListener.html#onSurfaceSizeChanged(int,int)">onSurfaceSizeChanged(int, int)</a></span> - Method in interface com.google.android.exoplayer2.video.<a href="com/google/android/exoplayer2/video/VideoListener.html" title="interface in com.google.android.exoplayer2.video">VideoListener</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
@@ -23691,6 +23783,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the timeline has been refreshed.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,int)">onTimelineChanged(Timeline, int)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,int)">onTimelineChanged(Timeline, int)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.EventListener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,java.lang.Object,int)">onTimelineChanged(Timeline, Object, int)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></dt>
@@ -23728,6 +23822,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the available or selected tracks change.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onTracksChanged(com.google.android.exoplayer2.source.TrackGroupArray,com.google.android.exoplayer2.trackselection.TrackSelectionArray)">onTracksChanged(TrackGroupArray, TrackSelectionArray)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html#onTracksChanged(com.google.android.exoplayer2.source.TrackGroupArray,com.google.android.exoplayer2.trackselection.TrackSelectionArray)">onTracksChanged(TrackGroupArray, TrackSelectionArray)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/TrackSelectionView.TrackSelectionListener.html#onTrackSelectionChanged(boolean,java.util.List)">onTrackSelectionChanged(boolean, List&lt;DefaultTrackSelector.SelectionOverride&gt;)</a></span> - Method in interface com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/TrackSelectionView.TrackSelectionListener.html" title="interface in com.google.android.exoplayer2.ui">TrackSelectionView.TrackSelectionListener</a></dt>
@@ -23951,6 +24047,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/AnalyticsCollector.html#onVideoSizeChanged(com.google.android.exoplayer2.video.VideoSize)">onVideoSizeChanged(VideoSize)</a></span> - Method in class com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/AnalyticsCollector.html" title="class in com.google.android.exoplayer2.analytics">AnalyticsCollector</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onVideoSizeChanged(com.google.android.exoplayer2.video.VideoSize)">onVideoSizeChanged(VideoSize)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/video/VideoListener.html#onVideoSizeChanged(com.google.android.exoplayer2.video.VideoSize)">onVideoSizeChanged(VideoSize)</a></span> - Method in interface com.google.android.exoplayer2.video.<a href="com/google/android/exoplayer2/video/VideoListener.html" title="interface in com.google.android.exoplayer2.video">VideoListener</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
@@ -23986,6 +24084,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Called when the volume changes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.Listener.html#onVolumeChanged(float)">onVolumeChanged(float)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html#onVolumeChanged(com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime,float)">onVolumeChanged(AnalyticsListener.EventTime, float)</a></span> - Method in interface com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/AnalyticsListener.html" title="interface in com.google.android.exoplayer2.analytics">AnalyticsListener</a></dt>
 <dd>
 <div class="block">Called when the volume changes.</div>
@@ -24721,6 +24821,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExtractorInput.html#peekFully(byte%5B%5D,int,int,boolean)">peekFully(byte[], int, int, boolean)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExtractorInput.html" title="class in com.google.android.exoplayer2.testutil">FakeExtractorInput</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/extractor/ExtractorUtil.html#peekFullyQuietly(com.google.android.exoplayer2.extractor.ExtractorInput,byte%5B%5D,int,int,boolean)">peekFullyQuietly(ExtractorInput, byte[], int, int, boolean)</a></span> - Static method in class com.google.android.exoplayer2.extractor.<a href="com/google/android/exoplayer2/extractor/ExtractorUtil.html" title="class in com.google.android.exoplayer2.extractor">ExtractorUtil</a></dt>
+<dd>
+<div class="block">Peeks data from <code>input</code>, respecting <code>allowEndOfInput</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/extractor/Id3Peeker.html#peekId3Data(com.google.android.exoplayer2.extractor.ExtractorInput,com.google.android.exoplayer2.metadata.id3.Id3Decoder.FramePredicate)">peekId3Data(ExtractorInput, Id3Decoder.FramePredicate)</a></span> - Method in class com.google.android.exoplayer2.extractor.<a href="com/google/android/exoplayer2/extractor/Id3Peeker.html" title="class in com.google.android.exoplayer2.extractor">Id3Peeker</a></dt>
 <dd>
 <div class="block">Peeks ID3 data from the input and parses the first ID3 tag.</div>
@@ -24733,6 +24837,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Peeks the source id of the next sample to be read, or the current upstream source id if the
  queue is empty or if the read position is at the end of the queue.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/extractor/ExtractorUtil.html#peekToLength(com.google.android.exoplayer2.extractor.ExtractorInput,byte%5B%5D,int,int)">peekToLength(ExtractorInput, byte[], int, int)</a></span> - Static method in class com.google.android.exoplayer2.extractor.<a href="com/google/android/exoplayer2/extractor/ExtractorUtil.html" title="class in com.google.android.exoplayer2.extractor">ExtractorUtil</a></dt>
+<dd>
+<div class="block">Peeks <code>length</code> bytes from the input peek position, or all the bytes to the end of the
+ input if there was less than <code>length</code> bytes left.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/util/ParsableByteArray.html#peekUnsignedByte()">peekUnsignedByte()</a></span> - Method in class com.google.android.exoplayer2.util.<a href="com/google/android/exoplayer2/util/ParsableByteArray.html" title="class in com.google.android.exoplayer2.util">ParsableByteArray</a></dt>
 <dd>
@@ -25120,7 +25229,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="com/google/android/exoplayer2/Player.EventFlags.html" title="annotation in com.google.android.exoplayer2"><span class="typeNameLink">Player.EventFlags</span></a> - Annotation Type in <a href="com/google/android/exoplayer2/package-summary.html">com.google.android.exoplayer2</a></dt>
 <dd>
-<div class="block">Events that can be reported via <a href="com/google/android/exoplayer2/Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a>.</div>
+<div class="block">Events that can be reported via <a href="com/google/android/exoplayer2/Player.Listener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.Listener.onEvents(Player, Events)</code></a>.</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/Player.EventListener.html" title="interface in com.google.android.exoplayer2"><span class="typeNameLink">Player.EventListener</span></a> - Interface in <a href="com/google/android/exoplayer2/package-summary.html">com.google.android.exoplayer2</a></dt>
 <dd>
@@ -26413,6 +26522,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExtractorInput.html#readFully(byte%5B%5D,int,int,boolean)">readFully(byte[], int, int, boolean)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExtractorInput.html" title="class in com.google.android.exoplayer2.testutil">FakeExtractorInput</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/extractor/ExtractorUtil.html#readFullyQuietly(com.google.android.exoplayer2.extractor.ExtractorInput,byte%5B%5D,int,int)">readFullyQuietly(ExtractorInput, byte[], int, int)</a></span> - Static method in class com.google.android.exoplayer2.extractor.<a href="com/google/android/exoplayer2/extractor/ExtractorUtil.html" title="class in com.google.android.exoplayer2.extractor">ExtractorUtil</a></dt>
+<dd>
+<div class="block">Equivalent to <a href="com/google/android/exoplayer2/extractor/ExtractorInput.html#readFully(byte%5B%5D,int,int)"><code>ExtractorInput.readFully(byte[], int, int)</code></a> except that it returns <code>
+ false</code> instead of throwing an <a href="https://developer.android.com/reference/java/io/EOFException.html" title="class or interface in java.io" class="externalLink" target="_top"><code>EOFException</code></a> if the end of input is encountered without
+ having fully satisfied the read.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/extractor/FlacMetadataReader.html#readId3Metadata(com.google.android.exoplayer2.extractor.ExtractorInput,boolean)">readId3Metadata(ExtractorInput, boolean)</a></span> - Static method in class com.google.android.exoplayer2.extractor.<a href="com/google/android/exoplayer2/extractor/FlacMetadataReader.html" title="class in com.google.android.exoplayer2.extractor">FlacMetadataReader</a></dt>
 <dd>
 <div class="block">Reads ID3 Data.</div>
@@ -27141,7 +27256,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#removeAudioListener(com.google.android.exoplayer2.audio.AudioListener)">removeAudioListener(AudioListener)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ExoPlayer.html#removeAudioOffloadListener(com.google.android.exoplayer2.ExoPlayer.AudioOffloadListener)">removeAudioOffloadListener(ExoPlayer.AudioOffloadListener)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/ExoPlayer.html" title="interface in com.google.android.exoplayer2">ExoPlayer</a></dt>
 <dd>
 <div class="block">Removes a listener of audio offload events.</div>
@@ -27161,7 +27278,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#removeDeviceListener(com.google.android.exoplayer2.device.DeviceListener)">removeDeviceListener(DeviceListener)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/offline/DefaultDownloadIndex.html#removeDownload(java.lang.String)">removeDownload(String)</a></span> - Method in class com.google.android.exoplayer2.offline.<a href="com/google/android/exoplayer2/offline/DefaultDownloadIndex.html" title="class in com.google.android.exoplayer2.offline">DefaultDownloadIndex</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/offline/DownloadManager.html#removeDownload(java.lang.String)">removeDownload(String)</a></span> - Method in class com.google.android.exoplayer2.offline.<a href="com/google/android/exoplayer2/offline/DownloadManager.html" title="class in com.google.android.exoplayer2.offline">DownloadManager</a></dt>
@@ -27223,7 +27342,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#removeListener(com.google.android.exoplayer2.Player.EventListener)">removeListener(Player.EventListener)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/StubExoPlayer.html#removeListener(com.google.android.exoplayer2.Player.EventListener)">removeListener(Player.EventListener)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/StubExoPlayer.html" title="class in com.google.android.exoplayer2.testutil">StubExoPlayer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html#removeListener(com.google.android.exoplayer2.Player.Listener)">removeListener(Player.Listener)</a></span> - Method in class com.google.android.exoplayer2.ext.cast.<a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html" title="class in com.google.android.exoplayer2.ext.cast">CastPlayer</a></dt>
@@ -27315,7 +27436,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#removeMetadataOutput(com.google.android.exoplayer2.metadata.MetadataOutput)">removeMetadataOutput(MetadataOutput)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/media2/SessionPlayerConnector.html#removePlaylistItem(int)">removePlaylistItem(int)</a></span> - Method in class com.google.android.exoplayer2.ext.media2.<a href="com/google/android/exoplayer2/ext/media2/SessionPlayerConnector.html" title="class in com.google.android.exoplayer2.ext.media2">SessionPlayerConnector</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/util/UriUtil.html#removeQueryParameter(android.net.Uri,java.lang.String)">removeQueryParameter(Uri, String)</a></span> - Static method in class com.google.android.exoplayer2.util.<a href="com/google/android/exoplayer2/util/UriUtil.html" title="class in com.google.android.exoplayer2.util">UriUtil</a></dt>
@@ -27345,7 +27468,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#removeTextOutput(com.google.android.exoplayer2.text.TextOutput)">removeTextOutput(TextOutput)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/database/VersionTable.html#removeVersion(android.database.sqlite.SQLiteDatabase,int,java.lang.String)">removeVersion(SQLiteDatabase, int, String)</a></span> - Static method in class com.google.android.exoplayer2.database.<a href="com/google/android/exoplayer2/database/VersionTable.html" title="class in com.google.android.exoplayer2.database">VersionTable</a></dt>
 <dd>
 <div class="block">Removes the version of a specified instance of a feature.</div>
@@ -27357,7 +27482,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#removeVideoListener(com.google.android.exoplayer2.video.VideoListener)">removeVideoListener(VideoListener)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView.html#removeVideoSurfaceListener(com.google.android.exoplayer2.video.spherical.SphericalGLSurfaceView.VideoSurfaceListener)">removeVideoSurfaceListener(SphericalGLSurfaceView.VideoSurfaceListener)</a></span> - Method in class com.google.android.exoplayer2.video.spherical.<a href="com/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView.html" title="class in com.google.android.exoplayer2.video.spherical">SphericalGLSurfaceView</a></dt>
 <dd>
 <div class="block">Removes a <a href="com/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView.VideoSurfaceListener.html" title="interface in com.google.android.exoplayer2.video.spherical"><code>SphericalGLSurfaceView.VideoSurfaceListener</code></a>.</div>
@@ -27866,6 +27993,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Resets the clock's position.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html#resetProvisioning()">resetProvisioning()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html" title="class in com.google.android.exoplayer2.testutil">FakeExoMediaDrm</a></dt>
+<dd>
+<div class="block">Resets the provisioning state of this instance, so it requires <a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html#setProvisionsRequired(int)"><code>provisionsRequired</code></a> (possibly zero) provision operations
+ before it's operational again.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/decoder/DecoderInputBuffer.html#resetSupplementalData(int)">resetSupplementalData(int)</a></span> - Method in class com.google.android.exoplayer2.decoder.<a href="com/google/android/exoplayer2/decoder/DecoderInputBuffer.html" title="class in com.google.android.exoplayer2.decoder">DecoderInputBuffer</a></dt>
 <dd>
 <div class="block">Clears <a href="com/google/android/exoplayer2/decoder/DecoderInputBuffer.html#supplementalData"><code>DecoderInputBuffer.supplementalData</code></a> and ensures that it's large enough to accommodate <code>
@@ -28356,7 +28488,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/robolectric/TestPlayerRunHelper.html#runUntilPositionDiscontinuity(com.google.android.exoplayer2.Player,int)">runUntilPositionDiscontinuity(Player, int)</a></span> - Static method in class com.google.android.exoplayer2.robolectric.<a href="com/google/android/exoplayer2/robolectric/TestPlayerRunHelper.html" title="class in com.google.android.exoplayer2.robolectric">TestPlayerRunHelper</a></dt>
 <dd>
-<div class="block">Runs tasks of the main <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink"><code>Looper</code></a> until a <a href="com/google/android/exoplayer2/Player.EventListener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,int)" target="_top"><code>Player.EventListener.onPositionDiscontinuity(Player.PositionInfo, Player.PositionInfo, int)</code></a>
+<div class="block">Runs tasks of the main <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink"><code>Looper</code></a> until a <a href="com/google/android/exoplayer2/Player.Listener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,int)" target="_top"><code>Player.Listener.onPositionDiscontinuity(Player.PositionInfo, Player.PositionInfo, int)</code></a>
  callback with the specified <a href="com/google/android/exoplayer2/Player.DiscontinuityReason.html" title="annotation in com.google.android.exoplayer2"><code>Player.DiscontinuityReason</code></a> occurred.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/robolectric/TestPlayerRunHelper.html#runUntilReceiveOffloadSchedulingEnabledNewState(com.google.android.exoplayer2.ExoPlayer)">runUntilReceiveOffloadSchedulingEnabledNewState(ExoPlayer)</a></span> - Static method in class com.google.android.exoplayer2.robolectric.<a href="com/google/android/exoplayer2/robolectric/TestPlayerRunHelper.html" title="class in com.google.android.exoplayer2.robolectric">TestPlayerRunHelper</a></dt>
@@ -31033,6 +31165,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Sets the maximum allowed audio channel count.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html#setMaxConcurrentSessions(int)">setMaxConcurrentSessions(int)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html" title="class in com.google.android.exoplayer2.testutil">FakeExoMediaDrm.Builder</a></dt>
+<dd>
+<div class="block">Sets the maximum number of concurrent sessions the <a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html" title="class in com.google.android.exoplayer2.testutil"><code>FakeExoMediaDrm</code></a> will support.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Format.Builder.html#setMaxInputSize(int)">setMaxInputSize(int)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Format.Builder.html" title="class in com.google.android.exoplayer2">Format.Builder</a></dt>
 <dd>
 <div class="block">Sets <a href="com/google/android/exoplayer2/Format.html#maxInputSize"><code>Format.maxInputSize</code></a>.</div>
@@ -31876,6 +32012,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Sets the proportional control factor used to adjust the playback speed.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html#setProvisionsRequired(int)">setProvisionsRequired(int)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.Builder.html" title="class in com.google.android.exoplayer2.testutil">FakeExoMediaDrm.Builder</a></dt>
+<dd>
+<div class="block">Sets how many successful provisioning round trips are needed for the <a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html" title="class in com.google.android.exoplayer2.testutil"><code>FakeExoMediaDrm</code></a>
+ to be provisioned.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/mediasession/MediaSessionConnector.html#setQueueEditor(com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector.QueueEditor)">setQueueEditor(MediaSessionConnector.QueueEditor)</a></span> - Method in class com.google.android.exoplayer2.ext.mediasession.<a href="com/google/android/exoplayer2/ext/mediasession/MediaSessionConnector.html" title="class in com.google.android.exoplayer2.ext.mediasession">MediaSessionConnector</a></dt>
 <dd>
 <div class="block">Sets the <a href="com/google/android/exoplayer2/ext/mediasession/MediaSessionConnector.QueueEditor.html" title="interface in com.google.android.exoplayer2.ext.mediasession"><code>MediaSessionConnector.QueueEditor</code></a> to handle queue edits sent by the media controller.</div>
@@ -32632,6 +32773,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.Builder.html#setTimeline(com.google.android.exoplayer2.Timeline)">setTimeline(Timeline)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ExoPlayerTestRunner.Builder.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner.Builder</a></dt>
 <dd>
 <div class="block">Sets a <a href="com/google/android/exoplayer2/Timeline.html" title="class in com.google.android.exoplayer2"><code>Timeline</code></a> to be used by a <a href="com/google/android/exoplayer2/testutil/FakeMediaSource.html" title="class in com.google.android.exoplayer2.testutil"><code>FakeMediaSource</code></a> in the test runner.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.Factory.html#setTimeoutMs(long)">setTimeoutMs(long)</a></span> - Method in class com.google.android.exoplayer2.source.rtsp.<a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.rtsp">RtspMediaSource.Factory</a></dt>
+<dd>
+<div class="block">Sets the timeout in milliseconds, the default value is <a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.html#DEFAULT_TIMEOUT_MS"><code>RtspMediaSource.DEFAULT_TIMEOUT_MS</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/rtsp/RtpPacket.Builder.html#setTimestamp(long)">setTimestamp(long)</a></span> - Method in class com.google.android.exoplayer2.source.rtsp.<a href="com/google/android/exoplayer2/source/rtsp/RtpPacket.Builder.html" title="class in com.google.android.exoplayer2.source.rtsp">RtpPacket.Builder</a></dt>
 <dd>
@@ -33400,17 +33545,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
      Object, MediaItem)</code></a> instead.</div>
 </div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/SinglePeriodTimeline.html#%3Cinit%3E(long,long,long,long,long,long,long,boolean,boolean,boolean,java.lang.Object,com.google.android.exoplayer2.MediaItem,com.google.android.exoplayer2.MediaItem.LiveConfiguration)">SinglePeriodTimeline(long, long, long, long, long, long, long, boolean, boolean, boolean, Object, MediaItem, MediaItem.LiveConfiguration)</a></span> - Constructor for class com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/SinglePeriodTimeline.html" title="class in com.google.android.exoplayer2.source">SinglePeriodTimeline</a></dt>
+<dd>
+<div class="block">Creates a timeline with one period, and a window of known duration starting at a specified
+ position in the period.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/SinglePeriodTimeline.html#%3Cinit%3E(long,long,long,long,long,long,long,boolean,boolean,boolean,java.lang.Object,java.lang.Object)">SinglePeriodTimeline(long, long, long, long, long, long, long, boolean, boolean, boolean, Object, Object)</a></span> - Constructor for class com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/SinglePeriodTimeline.html" title="class in com.google.android.exoplayer2.source">SinglePeriodTimeline</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Use <a href="com/google/android/exoplayer2/source/SinglePeriodTimeline.html#%3Cinit%3E(long,long,long,long,long,long,long,boolean,boolean,java.lang.Object,com.google.android.exoplayer2.MediaItem,com.google.android.exoplayer2.MediaItem.LiveConfiguration)"><code>SinglePeriodTimeline(long, long, long, long, long, long, long, boolean,
-     boolean, Object, MediaItem, MediaItem.LiveConfiguration)</code></a> instead.</div>
+<div class="deprecationComment">Use <a href="com/google/android/exoplayer2/source/SinglePeriodTimeline.html#%3Cinit%3E(long,long,long,long,long,long,long,boolean,boolean,boolean,java.lang.Object,com.google.android.exoplayer2.MediaItem,com.google.android.exoplayer2.MediaItem.LiveConfiguration)"><code>SinglePeriodTimeline(long, long, long, long, long, long, long, boolean,
+     boolean, boolean, Object, MediaItem, MediaItem.LiveConfiguration)</code></a> instead.</div>
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/SinglePeriodTimeline.html#%3Cinit%3E(long,long,long,long,long,long,long,boolean,boolean,java.lang.Object,com.google.android.exoplayer2.MediaItem,com.google.android.exoplayer2.MediaItem.LiveConfiguration)">SinglePeriodTimeline(long, long, long, long, long, long, long, boolean, boolean, Object, MediaItem, MediaItem.LiveConfiguration)</a></span> - Constructor for class com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/SinglePeriodTimeline.html" title="class in com.google.android.exoplayer2.source">SinglePeriodTimeline</a></dt>
 <dd>
-<div class="block">Creates a timeline with one period, and a window of known duration starting at a specified
- position in the period.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="com/google/android/exoplayer2/source/SinglePeriodTimeline.html#%3Cinit%3E(long,long,long,long,long,long,long,boolean,boolean,boolean,java.lang.Object,com.google.android.exoplayer2.MediaItem,com.google.android.exoplayer2.MediaItem.LiveConfiguration)"><code>SinglePeriodTimeline(long, long, long, long, long, long, long, boolean,
+     boolean, boolean, Object, MediaItem, MediaItem.LiveConfiguration)</code></a> instead.</div>
+</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/source/chunk/SingleSampleMediaChunk.html" title="class in com.google.android.exoplayer2.source.chunk"><span class="typeNameLink">SingleSampleMediaChunk</span></a> - Class in <a href="com/google/android/exoplayer2/source/chunk/package-summary.html">com.google.android.exoplayer2.source.chunk</a></dt>
 <dd>
@@ -33569,6 +33721,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExtractorInput.html#skipFully(int,boolean)">skipFully(int, boolean)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExtractorInput.html" title="class in com.google.android.exoplayer2.testutil">FakeExtractorInput</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/extractor/ExtractorUtil.html#skipFullyQuietly(com.google.android.exoplayer2.extractor.ExtractorInput,int)">skipFullyQuietly(ExtractorInput, int)</a></span> - Static method in class com.google.android.exoplayer2.extractor.<a href="com/google/android/exoplayer2/extractor/ExtractorUtil.html" title="class in com.google.android.exoplayer2.extractor">ExtractorUtil</a></dt>
+<dd>
+<div class="block">Equivalent to <a href="com/google/android/exoplayer2/extractor/ExtractorInput.html#skipFully(int)"><code>ExtractorInput.skipFully(int)</code></a> except that it returns <code>false</code>
+ instead of throwing an <a href="https://developer.android.com/reference/java/io/EOFException.html" title="class or interface in java.io" class="externalLink" target="_top"><code>EOFException</code></a> if the end of input is encountered without having
+ fully satisfied the skip.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/extractor/BinarySearchSeeker.html#skipInputUntilPosition(com.google.android.exoplayer2.extractor.ExtractorInput,long)">skipInputUntilPosition(ExtractorInput, long)</a></span> - Method in class com.google.android.exoplayer2.extractor.<a href="com/google/android/exoplayer2/extractor/BinarySearchSeeker.html" title="class in com.google.android.exoplayer2.extractor">BinarySearchSeeker</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/video/MediaCodecVideoRenderer.html#skipOutputBuffer(com.google.android.exoplayer2.mediacodec.MediaCodecAdapter,int,long)">skipOutputBuffer(MediaCodecAdapter, int, long)</a></span> - Method in class com.google.android.exoplayer2.video.<a href="com/google/android/exoplayer2/video/MediaCodecVideoRenderer.html" title="class in com.google.android.exoplayer2.video">MediaCodecVideoRenderer</a></dt>
@@ -34314,7 +34472,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/SimpleExoPlayer.html#stop(boolean)">stop(boolean)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/SimpleExoPlayer.html" title="class in com.google.android.exoplayer2">SimpleExoPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/ActionSchedule.Builder.html#stop(boolean)">stop(boolean)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/ActionSchedule.Builder.html" title="class in com.google.android.exoplayer2.testutil">ActionSchedule.Builder</a></dt>
 <dd>
 <div class="block">Schedules a stop action.</div>
@@ -36582,6 +36742,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">V</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html#VALID_PROVISION_RESPONSE">VALID_PROVISION_RESPONSE</a></span> - Static variable in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeExoMediaDrm.html" title="class in com.google.android.exoplayer2.testutil">FakeExoMediaDrm</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/text/webvtt/WebvttParserUtil.html#validateWebvttHeaderLine(com.google.android.exoplayer2.util.ParsableByteArray)">validateWebvttHeaderLine(ParsableByteArray)</a></span> - Static method in class com.google.android.exoplayer2.text.webvtt.<a href="com/google/android/exoplayer2/text/webvtt/WebvttParserUtil.html" title="class in com.google.android.exoplayer2.text.webvtt">WebvttParserUtil</a></dt>
 <dd>
 <div class="block">Reads and validates the first line of a WebVTT file.</div>
