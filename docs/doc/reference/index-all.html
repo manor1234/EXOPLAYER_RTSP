@@ -761,7 +761,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html#addListener(com.google.android.exoplayer2.Player.EventListener)">addListener(Player.EventListener)</a></span> - Method in class com.google.android.exoplayer2.ext.cast.<a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html" title="class in com.google.android.exoplayer2.ext.cast">CastPlayer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ForwardingPlayer.html#addListener(com.google.android.exoplayer2.Player.EventListener)">addListener(Player.EventListener)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/ForwardingPlayer.html" title="class in com.google.android.exoplayer2">ForwardingPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.html#addListener(com.google.android.exoplayer2.Player.EventListener)">addListener(Player.EventListener)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.html" title="interface in com.google.android.exoplayer2">Player</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
@@ -2240,7 +2242,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="com/google/android/exoplayer2/source/dash/BaseUrlExclusionList.html" title="class in com.google.android.exoplayer2.source.dash"><span class="typeNameLink">BaseUrlExclusionList</span></a> - Class in <a href="com/google/android/exoplayer2/source/dash/package-summary.html">com.google.android.exoplayer2.source.dash</a></dt>
 <dd>
-<div class="block">Holds the state of <a href="com/google/android/exoplayer2/source/dash/BaseUrlExclusionList.html#exclude(com.google.android.exoplayer2.source.dash.manifest.BaseUrl,long)"><code>excluded</code></a> base URLs to be used <a href="com/google/android/exoplayer2/source/dash/BaseUrlExclusionList.html#selectBaseUrl(java.util.List)"><code>to select</code></a> a base URL based on these exclusions.</div>
+<div class="block">Holds the state of <a href="com/google/android/exoplayer2/source/dash/BaseUrlExclusionList.html#exclude(com.google.android.exoplayer2.source.dash.manifest.BaseUrl,long)"><code>excluded</code></a> base URLs to be used to <a href="com/google/android/exoplayer2/source/dash/BaseUrlExclusionList.html#selectBaseUrl(java.util.List)"><code>select</code></a> a base URL based on these exclusions.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/BaseUrlExclusionList.html#%3Cinit%3E()">BaseUrlExclusionList()</a></span> - Constructor for class com.google.android.exoplayer2.source.dash.<a href="com/google/android/exoplayer2/source/dash/BaseUrlExclusionList.html" title="class in com.google.android.exoplayer2.source.dash">BaseUrlExclusionList</a></dt>
 <dd>
@@ -2728,7 +2730,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Builds a <a href="com/google/android/exoplayer2/upstream/DataSpec.html" title="class in com.google.android.exoplayer2.upstream"><code>DataSpec</code></a> for a given <a href="com/google/android/exoplayer2/source/dash/manifest/RangedUri.html" title="class in com.google.android.exoplayer2.source.dash.manifest"><code>RangedUri</code></a> belonging to <a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html" title="class in com.google.android.exoplayer2.source.dash.manifest"><code>Representation</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/DashUtil.html#buildDataSpec(java.lang.String,com.google.android.exoplayer2.source.dash.manifest.RangedUri,java.lang.String,int)">buildDataSpec(String, RangedUri, String, int)</a></span> - Static method in class com.google.android.exoplayer2.source.dash.<a href="com/google/android/exoplayer2/source/dash/DashUtil.html" title="class in com.google.android.exoplayer2.source.dash">DashUtil</a></dt>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/DashUtil.html#buildDataSpec(com.google.android.exoplayer2.source.dash.manifest.Representation,java.lang.String,com.google.android.exoplayer2.source.dash.manifest.RangedUri,int)">buildDataSpec(Representation, String, RangedUri, int)</a></span> - Static method in class com.google.android.exoplayer2.source.dash.<a href="com/google/android/exoplayer2/source/dash/DashUtil.html" title="class in com.google.android.exoplayer2.source.dash">DashUtil</a></dt>
 <dd>
 <div class="block">Builds a <a href="com/google/android/exoplayer2/upstream/DataSpec.html" title="class in com.google.android.exoplayer2.upstream"><code>DataSpec</code></a> for a given <a href="com/google/android/exoplayer2/source/dash/manifest/RangedUri.html" title="class in com.google.android.exoplayer2.source.dash.manifest"><code>RangedUri</code></a> belonging to <a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html" title="class in com.google.android.exoplayer2.source.dash.manifest"><code>Representation</code></a>.</div>
 </dd>
@@ -3715,6 +3717,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">The number of audio channels, or <a href="com/google/android/exoplayer2/Format.html#NO_VALUE"><code>Format.NO_VALUE</code></a> if unknown or not applicable.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#channelDescriptionResourceId">channelDescriptionResourceId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#channelId">channelId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#channelImportance">channelImportance</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#channelNameResourceId">channelNameResourceId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/MpegAudioUtil.Header.html#channels">channels</a></span> - Variable in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/MpegAudioUtil.Header.html" title="class in com.google.android.exoplayer2.audio">MpegAudioUtil.Header</a></dt>
 <dd>
 <div class="block">Number of audio channels in the frame.</div>
@@ -5125,6 +5135,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/AudioAttributes.html#contentType">contentType</a></span> - Variable in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/AudioAttributes.html" title="class in com.google.android.exoplayer2.audio">AudioAttributes</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/upstream/HttpDataSource.InvalidContentTypeException.html#contentType">contentType</a></span> - Variable in exception com.google.android.exoplayer2.upstream.<a href="com/google/android/exoplayer2/upstream/HttpDataSource.InvalidContentTypeException.html" title="class in com.google.android.exoplayer2.upstream">HttpDataSource.InvalidContentTypeException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#context">context</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/chunk/ChunkSampleStream.html#continueLoading(long)">continueLoading(long)</a></span> - Method in class com.google.android.exoplayer2.source.chunk.<a href="com/google/android/exoplayer2/source/chunk/ChunkSampleStream.html" title="class in com.google.android.exoplayer2.source.chunk">ChunkSampleStream</a></dt>
 <dd>&nbsp;</dd>
@@ -6640,6 +6652,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Player implementations that want to surface custom errors can use error codes greater than this
  value, so as to avoid collision with other error codes defined in this class.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#customActionReceiver">customActionReceiver</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/MediaItem.PlaybackProperties.html#customCacheKey">customCacheKey</a></span> - Variable in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/MediaItem.PlaybackProperties.html" title="class in com.google.android.exoplayer2">MediaItem.PlaybackProperties</a></dt>
 <dd>
 <div class="block">Optional custom cache key (only used for progressive streams).</div>
@@ -7015,9 +7029,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html#dataSpecWithPositionAndLength_readExpectedRange()">dataSpecWithPositionAndLength_readExpectedRange()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html" title="class in com.google.android.exoplayer2.testutil">DataSourceContractTest</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html#dataSpecWithPositionAtEnd_throwsPositionOutOfRangeException()">dataSpecWithPositionAtEnd_throwsPositionOutOfRangeException()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html" title="class in com.google.android.exoplayer2.testutil">DataSourceContractTest</a></dt>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html#dataSpecWithPositionAtEnd_readsZeroBytes()">dataSpecWithPositionAtEnd_readsZeroBytes()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html" title="class in com.google.android.exoplayer2.testutil">DataSourceContractTest</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html#dataSpecWithPositionAtEndAndLength_throwsPositionOutOfRangeException()">dataSpecWithPositionAtEndAndLength_throwsPositionOutOfRangeException()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html" title="class in com.google.android.exoplayer2.testutil">DataSourceContractTest</a></dt>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html#dataSpecWithPositionAtEndAndLength_readsZeroBytes()">dataSpecWithPositionAtEndAndLength_readsZeroBytes()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html" title="class in com.google.android.exoplayer2.testutil">DataSourceContractTest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html#dataSpecWithPositionOutOfRange_throwsPositionOutOfRangeException()">dataSpecWithPositionOutOfRange_throwsPositionOutOfRangeException()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html" title="class in com.google.android.exoplayer2.testutil">DataSourceContractTest</a></dt>
 <dd>&nbsp;</dd>
@@ -11777,6 +11791,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Creates an instance.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#fastForwardActionIconResourceId">fastForwardActionIconResourceId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/PlaybackStats.html#fatalErrorCount">fatalErrorCount</a></span> - Variable in class com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/PlaybackStats.html" title="class in com.google.android.exoplayer2.analytics">PlaybackStats</a></dt>
 <dd>
 <div class="block">The total number of fatal errors.</div>
@@ -15762,7 +15778,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Timeline.html#getPeriodPosition(com.google.android.exoplayer2.Timeline.Window,com.google.android.exoplayer2.Timeline.Period,int,long,long)">getPeriodPosition(Timeline.Window, Timeline.Period, int, long, long)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Timeline.html" title="class in com.google.android.exoplayer2">Timeline</a></dt>
 <dd>
-<div class="block">Converts (windowIndex, windowPositionUs) to the corresponding (periodUid, periodPositionUs).</div>
+<div class="block">Converts <code>(windowIndex, windowPositionUs)</code> to the corresponding <code>(periodUid,
+ periodPositionUs)</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Format.html#getPixelCount()">getPixelCount()</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Format.html" title="class in com.google.android.exoplayer2">Format</a></dt>
 <dd>
@@ -17474,6 +17491,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Returns the <a href="com/google/android/exoplayer2/Format.html" title="class in com.google.android.exoplayer2"><code>Format</code></a> that can be used to decode the wrapped metadata in <a href="com/google/android/exoplayer2/metadata/Metadata.Entry.html#getWrappedMetadataBytes()"><code>Metadata.Entry.getWrappedMetadataBytes()</code></a>, or null if this Entry doesn't contain wrapped metadata.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ForwardingPlayer.html#getWrappedPlayer()">getWrappedPlayer()</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/ForwardingPlayer.html" title="class in com.google.android.exoplayer2">ForwardingPlayer</a></dt>
+<dd>
+<div class="block">Returns the <a href="com/google/android/exoplayer2/Player.html" title="interface in com.google.android.exoplayer2"><code>Player</code></a> to which operations are forwarded.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/database/DatabaseProvider.html#getWritableDatabase()">getWritableDatabase()</a></span> - Method in interface com.google.android.exoplayer2.database.<a href="com/google/android/exoplayer2/database/DatabaseProvider.html" title="interface in com.google.android.exoplayer2.database">DatabaseProvider</a></dt>
 <dd>
 <div class="block">Creates and/or opens a database that will be used for reading and writing.</div>
@@ -17531,6 +17552,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">The group index.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/DefaultTrackSelector.SelectionOverride.html#groupIndex">groupIndex</a></span> - Variable in class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/DefaultTrackSelector.SelectionOverride.html" title="class in com.google.android.exoplayer2.trackselection">DefaultTrackSelector.SelectionOverride</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#groupKey">groupKey</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/google/android/exoplayer2/ext/gvr/GvrAudioProcessor.html" title="class in com.google.android.exoplayer2.ext.gvr"><span class="typeNameLink">GvrAudioProcessor</span></a> - Class in <a href="com/google/android/exoplayer2/ext/gvr/package-summary.html">com.google.android.exoplayer2.ext.gvr</a></dt>
 <dd>
@@ -20868,6 +20891,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/rtsp/RtpPacket.html#MAX_SIZE">MAX_SIZE</a></span> - Static variable in class com.google.android.exoplayer2.source.rtsp.<a href="com/google/android/exoplayer2/source/rtsp/RtpPacket.html" title="class in com.google.android.exoplayer2.source.rtsp">RtpPacket</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html#MAX_SPEED_SUPPORTED">MAX_SPEED_SUPPORTED</a></span> - Static variable in class com.google.android.exoplayer2.ext.cast.<a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html" title="class in com.google.android.exoplayer2.ext.cast">CastPlayer</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/mediacodec/MediaCodecInfo.html#MAX_SUPPORTED_INSTANCES_UNKNOWN">MAX_SUPPORTED_INSTANCES_UNKNOWN</a></span> - Static variable in class com.google.android.exoplayer2.mediacodec.<a href="com/google/android/exoplayer2/mediacodec/MediaCodecInfo.html" title="class in com.google.android.exoplayer2.mediacodec">MediaCodecInfo</a></dt>
 <dd>
 <div class="block">The value returned by <a href="com/google/android/exoplayer2/mediacodec/MediaCodecInfo.html#getMaxSupportedInstances()"><code>MediaCodecInfo.getMaxSupportedInstances()</code></a> if the upper bound on the maximum
@@ -21258,6 +21283,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/video/MediaCodecVideoRenderer.html#%3Cinit%3E(android.content.Context,com.google.android.exoplayer2.mediacodec.MediaCodecSelector,long,android.os.Handler,com.google.android.exoplayer2.video.VideoRendererEventListener,int)">MediaCodecVideoRenderer(Context, MediaCodecSelector, long, Handler, VideoRendererEventListener, int)</a></span> - Constructor for class com.google.android.exoplayer2.video.<a href="com/google/android/exoplayer2/video/MediaCodecVideoRenderer.html" title="class in com.google.android.exoplayer2.video">MediaCodecVideoRenderer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/google/android/exoplayer2/video/MediaCodecVideoRenderer.CodecMaxValues.html" title="class in com.google.android.exoplayer2.video"><span class="typeNameLink">MediaCodecVideoRenderer.CodecMaxValues</span></a> - Class in <a href="com/google/android/exoplayer2/video/package-summary.html">com.google.android.exoplayer2.video</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#mediaDescriptionAdapter">mediaDescriptionAdapter</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/google/android/exoplayer2/drm/MediaDrmCallback.html" title="interface in com.google.android.exoplayer2.drm"><span class="typeNameLink">MediaDrmCallback</span></a> - Interface in <a href="com/google/android/exoplayer2/drm/package-summary.html">com.google.android.exoplayer2.drm</a></dt>
 <dd>
@@ -21801,6 +21828,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">The minimum allowed playback speed.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/rtsp/RtpPacket.html#MIN_SEQUENCE_NUMBER">MIN_SEQUENCE_NUMBER</a></span> - Static variable in class com.google.android.exoplayer2.source.rtsp.<a href="com/google/android/exoplayer2/source/rtsp/RtpPacket.html" title="class in com.google.android.exoplayer2.source.rtsp">RtpPacket</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html#MIN_SPEED_SUPPORTED">MIN_SPEED_SUPPORTED</a></span> - Static variable in class com.google.android.exoplayer2.ext.cast.<a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html" title="class in com.google.android.exoplayer2.ext.cast">CastPlayer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/extractor/FlacStreamMetadata.html#minBlockSizeSamples">minBlockSizeSamples</a></span> - Variable in class com.google.android.exoplayer2.extractor.<a href="com/google/android/exoplayer2/extractor/FlacStreamMetadata.html" title="class in com.google.android.exoplayer2.extractor">FlacStreamMetadata</a></dt>
 <dd>
@@ -22421,6 +22450,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Parameters for seeking to the sync point immediately after a requested seek position.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#nextActionIconResourceId">nextActionIconResourceId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/MediaPeriodId.html#nextAdGroupIndex">nextAdGroupIndex</a></span> - Variable in class com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/MediaPeriodId.html" title="class in com.google.android.exoplayer2.source">MediaPeriodId</a></dt>
 <dd>
 <div class="block">The index of the next ad group to which the media period's content is clipped, or <a href="com/google/android/exoplayer2/C.html#INDEX_UNSET"><code>C.INDEX_UNSET</code></a> if there is no following ad group or if this media period is an ad.</div>
@@ -22489,6 +22520,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Indicates that a value is not in the corresponding lookup table.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/AudioProcessor.AudioFormat.html#NOT_SET">NOT_SET</a></span> - Static variable in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/AudioProcessor.AudioFormat.html" title="class in com.google.android.exoplayer2.audio">AudioProcessor.AudioFormat</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#notificationId">notificationId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#notificationListener">notificationListener</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/google/android/exoplayer2/util/NotificationUtil.html" title="class in com.google.android.exoplayer2.util"><span class="typeNameLink">NotificationUtil</span></a> - Class in <a href="com/google/android/exoplayer2/util/package-summary.html">com.google.android.exoplayer2.util</a></dt>
 <dd>
@@ -25688,6 +25723,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Schedules a pause action.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#pauseActionIconResourceId">pauseActionIconResourceId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/offline/DownloadManager.html#pauseDownloads()">pauseDownloads()</a></span> - Method in class com.google.android.exoplayer2.offline.<a href="com/google/android/exoplayer2/offline/DownloadManager.html" title="class in com.google.android.exoplayer2.offline">DownloadManager</a></dt>
 <dd>
 <div class="block">Pauses downloads.</div>
@@ -26003,6 +26040,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Playback has been started or paused by a call to <a href="com/google/android/exoplayer2/Player.html#setPlayWhenReady(boolean)"><code>Player.setPlayWhenReady(boolean)</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#playActionIconResourceId">playActionIconResourceId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/analytics/PlaybackStats.html#PLAYBACK_STATE_ABANDONED">PLAYBACK_STATE_ABANDONED</a></span> - Static variable in class com.google.android.exoplayer2.analytics.<a href="com/google/android/exoplayer2/analytics/PlaybackStats.html" title="class in com.google.android.exoplayer2.analytics">PlaybackStats</a></dt>
 <dd>
 <div class="block">Playback is abandoned before reaching the end of the media.</div>
@@ -26313,6 +26352,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Starts, updates and cancels a media style notification reflecting the player state.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.html#%3Cinit%3E(android.content.Context,java.lang.String,int,com.google.android.exoplayer2.ui.PlayerNotificationManager.MediaDescriptionAdapter,com.google.android.exoplayer2.ui.PlayerNotificationManager.NotificationListener,com.google.android.exoplayer2.ui.PlayerNotificationManager.CustomActionReceiver,int,int,int,int,int,int,int,int,java.lang.String)">PlayerNotificationManager(Context, String, int, PlayerNotificationManager.MediaDescriptionAdapter, PlayerNotificationManager.NotificationListener, PlayerNotificationManager.CustomActionReceiver, int, int, int, int, int, int, int, int, String)</a></span> - Constructor for class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.BitmapCallback.html" title="class in com.google.android.exoplayer2.ui"><span class="typeNameLink">PlayerNotificationManager.BitmapCallback</span></a> - Class in <a href="com/google/android/exoplayer2/ui/package-summary.html">com.google.android.exoplayer2.ui</a></dt>
 <dd>
 <div class="block">Receives a <a href="https://developer.android.com/reference/android/graphics/Bitmap.html" title="class or interface in android.graphics" class="externalLink" target="_top"><code>Bitmap</code></a>.</div>
@@ -26785,6 +26826,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Parameters for seeking to the sync point immediately before a requested seek position.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#previousActionIconResourceId">previousActionIconResourceId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/chunk/ChunkSampleStream.html#primaryTrackType">primaryTrackType</a></span> - Variable in class com.google.android.exoplayer2.source.chunk.<a href="com/google/android/exoplayer2/source/chunk/ChunkSampleStream.html" title="class in com.google.android.exoplayer2.source.chunk">ChunkSampleStream</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/BaseUrl.html#priority">priority</a></span> - Variable in class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/BaseUrl.html" title="class in com.google.android.exoplayer2.source.dash.manifest">BaseUrl</a></dt>
@@ -28366,7 +28409,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html#removeListener(com.google.android.exoplayer2.Player.EventListener)">removeListener(Player.EventListener)</a></span> - Method in class com.google.android.exoplayer2.ext.cast.<a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html" title="class in com.google.android.exoplayer2.ext.cast">CastPlayer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ForwardingPlayer.html#removeListener(com.google.android.exoplayer2.Player.EventListener)">removeListener(Player.EventListener)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/ForwardingPlayer.html" title="class in com.google.android.exoplayer2">ForwardingPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.html#removeListener(com.google.android.exoplayer2.Player.EventListener)">removeListener(Player.EventListener)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.html" title="interface in com.google.android.exoplayer2">Player</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
@@ -28889,7 +28934,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/AudioSink.html#reset()">reset()</a></span> - Method in interface com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/AudioSink.html" title="interface in com.google.android.exoplayer2.audio">AudioSink</a></dt>
 <dd>
-<div class="block">Resets the renderer, releasing any resources that it currently holds.</div>
+<div class="block">Resets the sink, releasing any resources that it currently holds.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/BaseAudioProcessor.html#reset()">reset()</a></span> - Method in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/BaseAudioProcessor.html" title="class in com.google.android.exoplayer2.audio">BaseAudioProcessor</a></dt>
 <dd>&nbsp;</dd>
@@ -29067,6 +29112,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/util/UriUtil.html#resolve(java.lang.String,java.lang.String)">resolve(String, String)</a></span> - Static method in class com.google.android.exoplayer2.util.<a href="com/google/android/exoplayer2/util/UriUtil.html" title="class in com.google.android.exoplayer2.util">UriUtil</a></dt>
 <dd>
 <div class="block">Performs relative resolution of a <code>referenceUri</code> with respect to a <code>baseUri</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/DashUtil.html#resolveCacheKey(com.google.android.exoplayer2.source.dash.manifest.Representation,com.google.android.exoplayer2.source.dash.manifest.RangedUri)">resolveCacheKey(Representation, RangedUri)</a></span> - Static method in class com.google.android.exoplayer2.source.dash.<a href="com/google/android/exoplayer2/source/dash/DashUtil.html" title="class in com.google.android.exoplayer2.source.dash">DashUtil</a></dt>
+<dd>
+<div class="block">Resolves the cache key to be used when requesting the given ranged URI for the given <a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html" title="class in com.google.android.exoplayer2.source.dash.manifest"><code>Representation</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/upstream/ResolvingDataSource.Resolver.html#resolveDataSpec(com.google.android.exoplayer2.upstream.DataSpec)">resolveDataSpec(DataSpec)</a></span> - Method in interface com.google.android.exoplayer2.upstream.<a href="com/google/android/exoplayer2/upstream/ResolvingDataSource.Resolver.html" title="interface in com.google.android.exoplayer2.upstream">ResolvingDataSource.Resolver</a></dt>
 <dd>
@@ -29270,6 +29319,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Identifies the revision of the media contained within the representation.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#rewindActionIconResourceId">rewindActionIconResourceId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/WavUtil.html#RIFF_FOURCC">RIFF_FOURCC</a></span> - Static variable in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/WavUtil.html" title="class in com.google.android.exoplayer2.audio">WavUtil</a></dt>
 <dd>
 <div class="block">Four character code for "RIFF".</div>
@@ -35058,6 +35109,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Holds information about a single segment of slow motion playback within a track.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#smallIconResourceId">smallIconResourceId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/google/android/exoplayer2/metadata/mp4/SmtaMetadataEntry.html" title="class in com.google.android.exoplayer2.metadata.mp4"><span class="typeNameLink">SmtaMetadataEntry</span></a> - Class in <a href="com/google/android/exoplayer2/metadata/mp4/package-summary.html">com.google.android.exoplayer2.metadata.mp4</a></dt>
 <dd>
 <div class="block">Stores metadata from the Samsung smta box.</div>
@@ -35551,7 +35604,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.html#STATE_BUFFERING">STATE_BUFFERING</a></span> - Static variable in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.html" title="interface in com.google.android.exoplayer2">Player</a></dt>
 <dd>
-<div class="block">The player is not able to immediately play from its current position.</div>
+<div class="block">The player is not able to immediately play the media, but is doing work toward being able to do
+ so.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/offline/Download.html#STATE_COMPLETED">STATE_COMPLETED</a></span> - Static variable in class com.google.android.exoplayer2.offline.<a href="com/google/android/exoplayer2/offline/Download.html" title="class in com.google.android.exoplayer2.offline">Download</a></dt>
 <dd>
@@ -35583,7 +35637,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.html#STATE_IDLE">STATE_IDLE</a></span> - Static variable in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.html" title="interface in com.google.android.exoplayer2">Player</a></dt>
 <dd>
-<div class="block">The player does not have any media to play.</div>
+<div class="block">The player is idle, and must be <a href="com/google/android/exoplayer2/Player.html#prepare()"><code>prepared</code></a> before it will play the media.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/drm/DrmSession.html#STATE_OPENED">STATE_OPENED</a></span> - Static variable in interface com.google.android.exoplayer2.drm.<a href="com/google/android/exoplayer2/drm/DrmSession.html" title="interface in com.google.android.exoplayer2.drm">DrmSession</a></dt>
 <dd>
@@ -35700,7 +35754,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html#stop(boolean)">stop(boolean)</a></span> - Method in class com.google.android.exoplayer2.ext.cast.<a href="com/google/android/exoplayer2/ext/cast/CastPlayer.html" title="class in com.google.android.exoplayer2.ext.cast">CastPlayer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ForwardingPlayer.html#stop(boolean)">stop(boolean)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/ForwardingPlayer.html" title="class in com.google.android.exoplayer2">ForwardingPlayer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.html#stop(boolean)">stop(boolean)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.html" title="interface in com.google.android.exoplayer2">Player</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
@@ -35737,6 +35793,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">The download isn't stopped.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#stopActionIconResourceId">stopActionIconResourceId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/offline/Download.html#stopReason">stopReason</a></span> - Variable in class com.google.android.exoplayer2.offline.<a href="com/google/android/exoplayer2/offline/Download.html" title="class in com.google.android.exoplayer2.offline">Download</a></dt>
 <dd>
 <div class="block">The reason the download is stopped, or <a href="com/google/android/exoplayer2/offline/Download.html#STOP_REASON_NONE"><code>Download.STOP_REASON_NONE</code></a>.</div>
@@ -35789,14 +35847,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">The contained stream elements.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/offline/StreamKey.html#streamIndex">streamIndex</a></span> - Variable in class com.google.android.exoplayer2.offline.<a href="com/google/android/exoplayer2/offline/StreamKey.html" title="class in com.google.android.exoplayer2.offline">StreamKey</a></dt>
+<dd>
+<div class="block">The stream index.</div>
+</dd>
 <dt><a href="com/google/android/exoplayer2/offline/StreamKey.html" title="class in com.google.android.exoplayer2.offline"><span class="typeNameLink">StreamKey</span></a> - Class in <a href="com/google/android/exoplayer2/offline/package-summary.html">com.google.android.exoplayer2.offline</a></dt>
 <dd>
-<div class="block">A key for a subset of media which can be separately loaded (a "stream").</div>
+<div class="block">A key for a subset of media that can be separately loaded (a "stream").</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/offline/StreamKey.html#%3Cinit%3E(int,int)">StreamKey(int, int)</a></span> - Constructor for class com.google.android.exoplayer2.offline.<a href="com/google/android/exoplayer2/offline/StreamKey.html" title="class in com.google.android.exoplayer2.offline">StreamKey</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates an instance with <a href="com/google/android/exoplayer2/offline/StreamKey.html#periodIndex"><code>StreamKey.periodIndex</code></a> set to 0.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/offline/StreamKey.html#%3Cinit%3E(int,int,int)">StreamKey(int, int, int)</a></span> - Constructor for class com.google.android.exoplayer2.offline.<a href="com/google/android/exoplayer2/offline/StreamKey.html" title="class in com.google.android.exoplayer2.offline">StreamKey</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates an instance.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/MediaItem.PlaybackProperties.html#streamKeys">streamKeys</a></span> - Variable in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/MediaItem.PlaybackProperties.html" title="class in com.google.android.exoplayer2">MediaItem.PlaybackProperties</a></dt>
 <dd>
 <div class="block">Optional stream keys by which the manifest is filtered.</div>
@@ -37010,7 +37076,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/offline/StreamKey.html#trackIndex">trackIndex</a></span> - Variable in class com.google.android.exoplayer2.offline.<a href="com/google/android/exoplayer2/offline/StreamKey.html" title="class in com.google.android.exoplayer2.offline">StreamKey</a></dt>
 <dd>
-<div class="block">The track index.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="com/google/android/exoplayer2/offline/StreamKey.html#streamIndex"><code>StreamKey.streamIndex</code></a>.</div>
+</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/ui/TrackNameProvider.html" title="interface in com.google.android.exoplayer2.ui"><span class="typeNameLink">TrackNameProvider</span></a> - Interface in <a href="com/google/android/exoplayer2/ui/package-summary.html">com.google.android.exoplayer2.ui</a></dt>
 <dd>
