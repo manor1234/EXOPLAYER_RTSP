@@ -1489,7 +1489,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.html#asList()">asList()</a></span> - Method in class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionOverrides</a></dt>
 <dd>
-<div class="block">Returns all <a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html" title="class in com.google.android.exoplayer2.trackselection"><code>TrackSelectionOverrides.TrackSelectionOverride</code></a> contained.</div>
+<div class="block">Returns a list of the <a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html" title="class in com.google.android.exoplayer2.trackselection"><code>overrides</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/util/NalUnitUtil.html#ASPECT_RATIO_IDC_VALUES">ASPECT_RATIO_IDC_VALUES</a></span> - Static variable in class com.google.android.exoplayer2.util.<a href="com/google/android/exoplayer2/util/NalUnitUtil.html" title="class in com.google.android.exoplayer2.util">NalUnitUtil</a></dt>
 <dd>
@@ -9564,6 +9564,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">The number of times all buffers to a keyframe were dropped.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/WavUtil.html#DS64_FOURCC">DS64_FOURCC</a></span> - Static variable in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/WavUtil.html" title="class in com.google.android.exoplayer2.audio">WavUtil</a></dt>
+<dd>
+<div class="block">Four character code for "ds64".</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/DtsUtil.html#DTS_HD_MAX_RATE_BYTES_PER_SECOND">DTS_HD_MAX_RATE_BYTES_PER_SECOND</a></span> - Static variable in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/DtsUtil.html" title="class in com.google.android.exoplayer2.audio">DtsUtil</a></dt>
 <dd>
 <div class="block">Maximum rate for a DTS-HD audio stream, in bytes per second.</div>
@@ -10571,6 +10575,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Essential properties in the adaptation set.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.RepresentationInfo.html#essentialProperties">essentialProperties</a></span> - Variable in class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.RepresentationInfo.html" title="class in com.google.android.exoplayer2.source.dash.manifest">DashManifestParser.RepresentationInfo</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html#essentialProperties">essentialProperties</a></span> - Variable in class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html" title="class in com.google.android.exoplayer2.source.dash.manifest">Representation</a></dt>
+<dd>
+<div class="block">Essential properties in the representation.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/metadata/id3/Id3Decoder.FramePredicate.html#evaluate(int,int,int,int,int)">evaluate(int, int, int, int, int)</a></span> - Method in interface com.google.android.exoplayer2.metadata.id3.<a href="com/google/android/exoplayer2/metadata/id3/Id3Decoder.FramePredicate.html" title="interface in com.google.android.exoplayer2.metadata.id3">Id3Decoder.FramePredicate</a></dt>
 <dd>
 <div class="block">Returns whether a frame with the specified parameters should be decoded.</div>
@@ -11284,6 +11294,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationComment">Use <a href="com/google/android/exoplayer2/ExoPlayer.Builder.html#experimentalSetForegroundModeTimeoutMs(long)"><code>ExoPlayer.Builder.experimentalSetForegroundModeTimeoutMs(long)</code></a>
      instead.</div>
 </div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/DefaultRenderersFactory.html#experimentalSetImmediateCodecStartAfterFlushEnabled(boolean)">experimentalSetImmediateCodecStartAfterFlushEnabled(boolean)</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/DefaultRenderersFactory.html" title="class in com.google.android.exoplayer2">DefaultRenderersFactory</a></dt>
+<dd>
+<div class="block">Enable calling <a href="https://developer.android.com/reference/android/media/MediaCodec.html#start()" title="class or interface in android.media" class="externalLink"><code>MediaCodec.start()</code></a> immediately after <a href="https://developer.android.com/reference/android/media/MediaCodec.html?is-external=true#flush()" title="class or interface in android.media" class="externalLink" target="_top"><code>MediaCodec.flush()</code></a> on the
+ playback thread, when operating the codec in asynchronous mode.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/mediacodec/DefaultMediaCodecAdapterFactory.html#experimentalSetImmediateCodecStartAfterFlushEnabled(boolean)">experimentalSetImmediateCodecStartAfterFlushEnabled(boolean)</a></span> - Method in class com.google.android.exoplayer2.mediacodec.<a href="com/google/android/exoplayer2/mediacodec/DefaultMediaCodecAdapterFactory.html" title="class in com.google.android.exoplayer2.mediacodec">DefaultMediaCodecAdapterFactory</a></dt>
+<dd>
+<div class="block">Enable calling <a href="https://developer.android.com/reference/android/media/MediaCodec.html#start()" title="class or interface in android.media" class="externalLink"><code>MediaCodec.start()</code></a> immediately after <a href="https://developer.android.com/reference/android/media/MediaCodec.html?is-external=true#flush()" title="class or interface in android.media" class="externalLink" target="_top"><code>MediaCodec.flush()</code></a> on the
+ playback thread, when operating the codec in asynchronous mode.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ExoPlayer.html#experimentalSetOffloadSchedulingEnabled(boolean)">experimentalSetOffloadSchedulingEnabled(boolean)</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/ExoPlayer.html" title="interface in com.google.android.exoplayer2">ExoPlayer</a></dt>
 <dd>
@@ -13907,6 +13927,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/mediacodec/MediaCodecRenderer.html#getCodec()">getCodec()</a></span> - Method in class com.google.android.exoplayer2.mediacodec.<a href="com/google/android/exoplayer2/mediacodec/MediaCodecRenderer.html" title="class in com.google.android.exoplayer2.mediacodec">MediaCodecRenderer</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/DefaultRenderersFactory.html#getCodecAdapterFactory()">getCodecAdapterFactory()</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/DefaultRenderersFactory.html" title="class in com.google.android.exoplayer2">DefaultRenderersFactory</a></dt>
+<dd>
+<div class="block">Returns the <a href="com/google/android/exoplayer2/mediacodec/MediaCodecAdapter.Factory.html" title="interface in com.google.android.exoplayer2.mediacodec"><code>MediaCodecAdapter.Factory</code></a> that will be used when creating <a href="com/google/android/exoplayer2/mediacodec/MediaCodecRenderer.html" title="class in com.google.android.exoplayer2.mediacodec"><code>MediaCodecRenderer</code></a> instances.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/util/Util.html#getCodecCountOfType(java.lang.String,@com.google.android.exoplayer2.C.TrackTypeint)">getCodecCountOfType(String, @com.google.android.exoplayer2.C.TrackType int)</a></span> - Static method in class com.google.android.exoplayer2.util.<a href="com/google/android/exoplayer2/util/Util.html" title="class in com.google.android.exoplayer2.util">Util</a></dt>
 <dd>
 <div class="block">Returns the number of codec strings in <code>codecs</code> whose type matches <code>trackType</code>.</div>
@@ -14392,7 +14416,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.html#getCurrentWindowIndex()">getCurrentWindowIndex()</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.html" title="interface in com.google.android.exoplayer2">Player</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Use <a href="com/google/android/exoplayer2/Player.html#getCurrentMediaItem()"><code>Player.getCurrentMediaItem()</code></a> instead.</div>
+<div class="deprecationComment">Use <a href="com/google/android/exoplayer2/Player.html#getCurrentMediaItemIndex()"><code>Player.getCurrentMediaItemIndex()</code></a> instead.</div>
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ext/mediasession/MediaSessionConnector.CustomActionProvider.html#getCustomAction(com.google.android.exoplayer2.Player)">getCustomAction(Player)</a></span> - Method in interface com.google.android.exoplayer2.ext.mediasession.<a href="com/google/android/exoplayer2/ext/mediasession/MediaSessionConnector.CustomActionProvider.html" title="interface in com.google.android.exoplayer2.ext.mediasession">MediaSessionConnector.CustomActionProvider</a></dt>
@@ -16787,7 +16811,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/upstream/TeeDataSource.html#getResponseHeaders()">getResponseHeaders()</a></span> - Method in class com.google.android.exoplayer2.upstream.<a href="com/google/android/exoplayer2/upstream/TeeDataSource.html" title="class in com.google.android.exoplayer2.upstream">TeeDataSource</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html#getResponseHeaders_caseInsensitive()">getResponseHeaders_caseInsensitive()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html" title="class in com.google.android.exoplayer2.testutil">DataSourceContractTest</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html#getResponseHeaders_isEmptyWhileNotOpen()">getResponseHeaders_isEmptyWhileNotOpen()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html" title="class in com.google.android.exoplayer2.testutil">DataSourceContractTest</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html#getResponseHeaders_noNullKeysOrValues()">getResponseHeaders_noNullKeysOrValues()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html" title="class in com.google.android.exoplayer2.testutil">DataSourceContractTest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html#getResponseHeaders_resourceNotFound_isEmptyWhileNotOpen()">getResponseHeaders_resourceNotFound_isEmptyWhileNotOpen()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/DataSourceContractTest.html" title="class in com.google.android.exoplayer2.testutil">DataSourceContractTest</a></dt>
 <dd>&nbsp;</dd>
@@ -17057,7 +17085,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/DefaultTrackSelector.Parameters.html#getSelectionOverride(int,com.google.android.exoplayer2.source.TrackGroupArray)">getSelectionOverride(int, TrackGroupArray)</a></span> - Method in class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/DefaultTrackSelector.Parameters.html" title="class in com.google.android.exoplayer2.trackselection">DefaultTrackSelector.Parameters</a></dt>
 <dd>
-<div class="block">Returns the override for the specified renderer and <a href="com/google/android/exoplayer2/source/TrackGroupArray.html" title="class in com.google.android.exoplayer2.source"><code>TrackGroupArray</code></a>.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Only works to retrieve the overrides set with the deprecated <a href="com/google/android/exoplayer2/trackselection/DefaultTrackSelector.ParametersBuilder.html#setSelectionOverride(int,com.google.android.exoplayer2.source.TrackGroupArray,com.google.android.exoplayer2.trackselection.DefaultTrackSelector.SelectionOverride)"><code>DefaultTrackSelector.ParametersBuilder.setSelectionOverride(int, TrackGroupArray, SelectionOverride)</code></a>. Use
+     <a href="com/google/android/exoplayer2/trackselection/TrackSelectionParameters.html#trackSelectionOverrides"><code>TrackSelectionParameters.trackSelectionOverrides</code></a> instead.</div>
+</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeTrackSelection.html#getSelectionReason()">getSelectionReason()</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeTrackSelection.html" title="class in com.google.android.exoplayer2.testutil">FakeTrackSelection</a></dt>
 <dd>&nbsp;</dd>
@@ -17622,6 +17653,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/RendererCapabilities.html#getTrackType()">getTrackType()</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/RendererCapabilities.html" title="interface in com.google.android.exoplayer2">RendererCapabilities</a></dt>
 <dd>
 <div class="block">Returns the track type that the <a href="com/google/android/exoplayer2/Renderer.html" title="interface in com.google.android.exoplayer2"><code>Renderer</code></a> handles.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html#getTrackType()">getTrackType()</a></span> - Method in class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionOverrides.TrackSelectionOverride</a></dt>
+<dd>
+<div class="block">Returns the <a href="com/google/android/exoplayer2/C.TrackType.html" title="annotation in com.google.android.exoplayer2"><code>C.TrackType</code></a> of the overriden track group.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/TracksInfo.TrackGroupInfo.html#getTrackType()">getTrackType()</a></span> - Method in class com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/TracksInfo.TrackGroupInfo.html" title="class in com.google.android.exoplayer2">TracksInfo.TrackGroupInfo</a></dt>
 <dd>
@@ -18715,7 +18750,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/DefaultTrackSelector.Parameters.html#hasSelectionOverride(int,com.google.android.exoplayer2.source.TrackGroupArray)">hasSelectionOverride(int, TrackGroupArray)</a></span> - Method in class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/DefaultTrackSelector.Parameters.html" title="class in com.google.android.exoplayer2.trackselection">DefaultTrackSelector.Parameters</a></dt>
 <dd>
-<div class="block">Returns whether there is an override for the specified renderer and <a href="com/google/android/exoplayer2/source/TrackGroupArray.html" title="class in com.google.android.exoplayer2.source"><code>TrackGroupArray</code></a>.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Only works to retrieve the overrides set with the deprecated <a href="com/google/android/exoplayer2/trackselection/DefaultTrackSelector.ParametersBuilder.html#setSelectionOverride(int,com.google.android.exoplayer2.source.TrackGroupArray,com.google.android.exoplayer2.trackselection.DefaultTrackSelector.SelectionOverride)"><code>DefaultTrackSelector.ParametersBuilder.setSelectionOverride(int, TrackGroupArray, SelectionOverride)</code></a>. Use
+     <a href="com/google/android/exoplayer2/trackselection/TrackSelectionParameters.html#trackSelectionOverrides"><code>TrackSelectionParameters.trackSelectionOverrides</code></a> instead.</div>
+</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/truth/SpannedSubject.html#hasStrikethroughSpanBetween(int,int)">hasStrikethroughSpanBetween(int, int)</a></span> - Method in class com.google.android.exoplayer2.testutil.truth.<a href="com/google/android/exoplayer2/testutil/truth/SpannedSubject.html" title="class in com.google.android.exoplayer2.testutil.truth">SpannedSubject</a></dt>
 <dd>
@@ -21652,11 +21690,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/smoothstreaming/manifest/SsManifest.StreamElement.html#maxWidth">maxWidth</a></span> - Variable in class com.google.android.exoplayer2.source.smoothstreaming.manifest.<a href="com/google/android/exoplayer2/source/smoothstreaming/manifest/SsManifest.StreamElement.html" title="class in com.google.android.exoplayer2.source.smoothstreaming.manifest">SsManifest.StreamElement</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/DefaultTrackSelector.html#maybeApplyOverride(com.google.android.exoplayer2.trackselection.MappingTrackSelector.MappedTrackInfo,com.google.android.exoplayer2.trackselection.DefaultTrackSelector.Parameters,int,com.google.android.exoplayer2.trackselection.ExoTrackSelection.Definition)">maybeApplyOverride(MappingTrackSelector.MappedTrackInfo, DefaultTrackSelector.Parameters, int, ExoTrackSelection.Definition)</a></span> - Method in class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/DefaultTrackSelector.html" title="class in com.google.android.exoplayer2.trackselection">DefaultTrackSelector</a></dt>
-<dd>
-<div class="block">Returns the <a href="com/google/android/exoplayer2/trackselection/ExoTrackSelection.Definition.html" title="class in com.google.android.exoplayer2.trackselection"><code>ExoTrackSelection.Definition</code></a> of a renderer after applying selection
- overriding and renderer disabling.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/video/DecoderVideoRenderer.html#maybeDropBuffersToKeyframe(long)">maybeDropBuffersToKeyframe(long)</a></span> - Method in class com.google.android.exoplayer2.video.<a href="com/google/android/exoplayer2/video/DecoderVideoRenderer.html" title="class in com.google.android.exoplayer2.video">DecoderVideoRenderer</a></dt>
 <dd>
 <div class="block">Drops frames from the current output buffer to the next keyframe at or before the playback
@@ -22895,7 +22928,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/SegmentBase.MultiSegmentBase.html#%3Cinit%3E(com.google.android.exoplayer2.source.dash.manifest.RangedUri,long,long,long,long,java.util.List,long,long,long)">MultiSegmentBase(RangedUri, long, long, long, long, List&lt;SegmentBase.SegmentTimelineElement&gt;, long, long, long)</a></span> - Constructor for class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/SegmentBase.MultiSegmentBase.html" title="class in com.google.android.exoplayer2.source.dash.manifest">SegmentBase.MultiSegmentBase</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/Representation.MultiSegmentRepresentation.html#%3Cinit%3E(long,com.google.android.exoplayer2.Format,java.util.List,com.google.android.exoplayer2.source.dash.manifest.SegmentBase.MultiSegmentBase,java.util.List)">MultiSegmentRepresentation(long, Format, List&lt;BaseUrl&gt;, SegmentBase.MultiSegmentBase, List&lt;Descriptor&gt;)</a></span> - Constructor for class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/Representation.MultiSegmentRepresentation.html" title="class in com.google.android.exoplayer2.source.dash.manifest">Representation.MultiSegmentRepresentation</a></dt>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/Representation.MultiSegmentRepresentation.html#%3Cinit%3E(long,com.google.android.exoplayer2.Format,java.util.List,com.google.android.exoplayer2.source.dash.manifest.SegmentBase.MultiSegmentBase,java.util.List,java.util.List,java.util.List)">MultiSegmentRepresentation(long, Format, List&lt;BaseUrl&gt;, SegmentBase.MultiSegmentBase, List&lt;Descriptor&gt;, List&lt;Descriptor&gt;, List&lt;Descriptor&gt;)</a></span> - Constructor for class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/Representation.MultiSegmentRepresentation.html" title="class in com.google.android.exoplayer2.source.dash.manifest">Representation.MultiSegmentRepresentation</a></dt>
 <dd>
 <div class="block">Creates the multi-segment Representation.</div>
 </dd>
@@ -23073,11 +23106,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Constructs a new instance.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html#newInstance(long,com.google.android.exoplayer2.Format,java.util.List,com.google.android.exoplayer2.source.dash.manifest.SegmentBase,java.util.List)">newInstance(long, Format, List&lt;BaseUrl&gt;, SegmentBase, List&lt;Descriptor&gt;)</a></span> - Static method in class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html" title="class in com.google.android.exoplayer2.source.dash.manifest">Representation</a></dt>
-<dd>
-<div class="block">Constructs a new instance.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html#newInstance(long,com.google.android.exoplayer2.Format,java.util.List,com.google.android.exoplayer2.source.dash.manifest.SegmentBase,java.util.List,java.lang.String)">newInstance(long, Format, List&lt;BaseUrl&gt;, SegmentBase, List&lt;Descriptor&gt;, String)</a></span> - Static method in class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html" title="class in com.google.android.exoplayer2.source.dash.manifest">Representation</a></dt>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html#newInstance(long,com.google.android.exoplayer2.Format,java.util.List,com.google.android.exoplayer2.source.dash.manifest.SegmentBase,java.util.List,java.util.List,java.util.List,java.lang.String)">newInstance(long, Format, List&lt;BaseUrl&gt;, SegmentBase, List&lt;Descriptor&gt;, List&lt;Descriptor&gt;, List&lt;Descriptor&gt;, String)</a></span> - Static method in class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html" title="class in com.google.android.exoplayer2.source.dash.manifest">Representation</a></dt>
 <dd>
 <div class="block">Constructs a new instance.</div>
 </dd>
@@ -29541,7 +29570,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/DefaultDashChunkSource.html#representationHolders">representationHolders</a></span> - Variable in class com.google.android.exoplayer2.source.dash.<a href="com/google/android/exoplayer2/source/dash/DefaultDashChunkSource.html" title="class in com.google.android.exoplayer2.source.dash">DefaultDashChunkSource</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.RepresentationInfo.html#%3Cinit%3E(com.google.android.exoplayer2.Format,java.util.List,com.google.android.exoplayer2.source.dash.manifest.SegmentBase,java.lang.String,java.util.ArrayList,java.util.ArrayList,long)">RepresentationInfo(Format, List&lt;BaseUrl&gt;, SegmentBase, String, ArrayList&lt;DrmInitData.SchemeData&gt;, ArrayList&lt;Descriptor&gt;, long)</a></span> - Constructor for class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.RepresentationInfo.html" title="class in com.google.android.exoplayer2.source.dash.manifest">DashManifestParser.RepresentationInfo</a></dt>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.RepresentationInfo.html#%3Cinit%3E(com.google.android.exoplayer2.Format,java.util.List,com.google.android.exoplayer2.source.dash.manifest.SegmentBase,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.List,java.util.List,long)">RepresentationInfo(Format, List&lt;BaseUrl&gt;, SegmentBase, String, ArrayList&lt;DrmInitData.SchemeData&gt;, ArrayList&lt;Descriptor&gt;, List&lt;Descriptor&gt;, List&lt;Descriptor&gt;, long)</a></span> - Constructor for class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.RepresentationInfo.html" title="class in com.google.android.exoplayer2.source.dash.manifest">DashManifestParser.RepresentationInfo</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/AdaptationSet.html#representations">representations</a></span> - Variable in class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/AdaptationSet.html" title="class in com.google.android.exoplayer2.source.dash.manifest">AdaptationSet</a></dt>
 <dd>
@@ -30028,6 +30057,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html#rewindActionIconResourceId">rewindActionIconResourceId</a></span> - Variable in class com.google.android.exoplayer2.ui.<a href="com/google/android/exoplayer2/ui/PlayerNotificationManager.Builder.html" title="class in com.google.android.exoplayer2.ui">PlayerNotificationManager.Builder</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/WavUtil.html#RF64_FOURCC">RF64_FOURCC</a></span> - Static variable in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/WavUtil.html" title="class in com.google.android.exoplayer2.audio">WavUtil</a></dt>
+<dd>
+<div class="block">Four character code for "RF64".</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/WavUtil.html#RIFF_FOURCC">RIFF_FOURCC</a></span> - Static variable in class com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/WavUtil.html" title="class in com.google.android.exoplayer2.audio">WavUtil</a></dt>
 <dd>
 <div class="block">Four character code for "RIFF".</div>
@@ -32395,11 +32428,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sets the <a href="com/google/android/exoplayer2/upstream/HttpDataSource.Factory.html" title="interface in com.google.android.exoplayer2.upstream"><code>HttpDataSource.Factory</code></a> to be used for creating <a href="com/google/android/exoplayer2/drm/HttpMediaDrmCallback.html" title="class in com.google.android.exoplayer2.drm"><code>HttpMediaDrmCallbacks</code></a> which executes key and provisioning requests over HTTP.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/DashMediaSource.Factory.html#setDrmHttpDataSourceFactory(com.google.android.exoplayer2.upstream.HttpDataSource.Factory)">setDrmHttpDataSourceFactory(HttpDataSource.Factory)</a></span> - Method in class com.google.android.exoplayer2.source.dash.<a href="com/google/android/exoplayer2/source/dash/DashMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.dash">DashMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/DefaultMediaSourceFactory.html#setDrmHttpDataSourceFactory(com.google.android.exoplayer2.upstream.HttpDataSource.Factory)">setDrmHttpDataSourceFactory(HttpDataSource.Factory)</a></span> - Method in class com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/DefaultMediaSourceFactory.html" title="class in com.google.android.exoplayer2.source">DefaultMediaSourceFactory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/hls/HlsMediaSource.Factory.html#setDrmHttpDataSourceFactory(com.google.android.exoplayer2.upstream.HttpDataSource.Factory)">setDrmHttpDataSourceFactory(HttpDataSource.Factory)</a></span> - Method in class com.google.android.exoplayer2.source.hls.<a href="com/google/android/exoplayer2/source/hls/HlsMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.hls">HlsMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/MediaSourceFactory.html#setDrmHttpDataSourceFactory(com.google.android.exoplayer2.upstream.HttpDataSource.Factory)">setDrmHttpDataSourceFactory(HttpDataSource.Factory)</a></span> - Method in interface com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/MediaSourceFactory.html" title="interface in com.google.android.exoplayer2.source">MediaSourceFactory</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
@@ -32409,7 +32448,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/ProgressiveMediaSource.Factory.html#setDrmHttpDataSourceFactory(com.google.android.exoplayer2.upstream.HttpDataSource.Factory)">setDrmHttpDataSourceFactory(HttpDataSource.Factory)</a></span> - Method in class com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/ProgressiveMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source">ProgressiveMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.Factory.html#setDrmHttpDataSourceFactory(com.google.android.exoplayer2.upstream.HttpDataSource.Factory)">setDrmHttpDataSourceFactory(HttpDataSource.Factory)</a></span> - Method in class com.google.android.exoplayer2.source.rtsp.<a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.rtsp">RtspMediaSource.Factory</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
@@ -32417,7 +32458,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/smoothstreaming/SsMediaSource.Factory.html#setDrmHttpDataSourceFactory(com.google.android.exoplayer2.upstream.HttpDataSource.Factory)">setDrmHttpDataSourceFactory(HttpDataSource.Factory)</a></span> - Method in class com.google.android.exoplayer2.source.smoothstreaming.<a href="com/google/android/exoplayer2/source/smoothstreaming/SsMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.smoothstreaming">SsMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeMediaSourceFactory.html#setDrmHttpDataSourceFactory(com.google.android.exoplayer2.upstream.HttpDataSource.Factory)">setDrmHttpDataSourceFactory(HttpDataSource.Factory)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeMediaSourceFactory.html" title="class in com.google.android.exoplayer2.testutil">FakeMediaSourceFactory</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
@@ -32477,11 +32520,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/DashMediaSource.Factory.html#setDrmSessionManager(com.google.android.exoplayer2.drm.DrmSessionManager)">setDrmSessionManager(DrmSessionManager)</a></span> - Method in class com.google.android.exoplayer2.source.dash.<a href="com/google/android/exoplayer2/source/dash/DashMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.dash">DashMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/DefaultMediaSourceFactory.html#setDrmSessionManager(com.google.android.exoplayer2.drm.DrmSessionManager)">setDrmSessionManager(DrmSessionManager)</a></span> - Method in class com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/DefaultMediaSourceFactory.html" title="class in com.google.android.exoplayer2.source">DefaultMediaSourceFactory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/hls/HlsMediaSource.Factory.html#setDrmSessionManager(com.google.android.exoplayer2.drm.DrmSessionManager)">setDrmSessionManager(DrmSessionManager)</a></span> - Method in class com.google.android.exoplayer2.source.hls.<a href="com/google/android/exoplayer2/source/hls/HlsMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.hls">HlsMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/MediaSourceFactory.html#setDrmSessionManager(com.google.android.exoplayer2.drm.DrmSessionManager)">setDrmSessionManager(DrmSessionManager)</a></span> - Method in interface com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/MediaSourceFactory.html" title="interface in com.google.android.exoplayer2.source">MediaSourceFactory</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
@@ -32490,7 +32539,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/ProgressiveMediaSource.Factory.html#setDrmSessionManager(com.google.android.exoplayer2.drm.DrmSessionManager)">setDrmSessionManager(DrmSessionManager)</a></span> - Method in class com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/ProgressiveMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source">ProgressiveMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.Factory.html#setDrmSessionManager(com.google.android.exoplayer2.drm.DrmSessionManager)">setDrmSessionManager(DrmSessionManager)</a></span> - Method in class com.google.android.exoplayer2.source.rtsp.<a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.rtsp">RtspMediaSource.Factory</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
@@ -32498,7 +32549,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/smoothstreaming/SsMediaSource.Factory.html#setDrmSessionManager(com.google.android.exoplayer2.drm.DrmSessionManager)">setDrmSessionManager(DrmSessionManager)</a></span> - Method in class com.google.android.exoplayer2.source.smoothstreaming.<a href="com/google/android/exoplayer2/source/smoothstreaming/SsMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.smoothstreaming">SsMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeMediaSourceFactory.html#setDrmSessionManager(com.google.android.exoplayer2.drm.DrmSessionManager)">setDrmSessionManager(DrmSessionManager)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeMediaSourceFactory.html" title="class in com.google.android.exoplayer2.testutil">FakeMediaSourceFactory</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
@@ -32529,11 +32582,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sets the optional user agent to be used for DRM requests.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/DashMediaSource.Factory.html#setDrmUserAgent(java.lang.String)">setDrmUserAgent(String)</a></span> - Method in class com.google.android.exoplayer2.source.dash.<a href="com/google/android/exoplayer2/source/dash/DashMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.dash">DashMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/DefaultMediaSourceFactory.html#setDrmUserAgent(java.lang.String)">setDrmUserAgent(String)</a></span> - Method in class com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/DefaultMediaSourceFactory.html" title="class in com.google.android.exoplayer2.source">DefaultMediaSourceFactory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/hls/HlsMediaSource.Factory.html#setDrmUserAgent(java.lang.String)">setDrmUserAgent(String)</a></span> - Method in class com.google.android.exoplayer2.source.hls.<a href="com/google/android/exoplayer2/source/hls/HlsMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.hls">HlsMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/MediaSourceFactory.html#setDrmUserAgent(java.lang.String)">setDrmUserAgent(String)</a></span> - Method in interface com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/MediaSourceFactory.html" title="interface in com.google.android.exoplayer2.source">MediaSourceFactory</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
@@ -32543,7 +32602,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/ProgressiveMediaSource.Factory.html#setDrmUserAgent(java.lang.String)">setDrmUserAgent(String)</a></span> - Method in class com.google.android.exoplayer2.source.<a href="com/google/android/exoplayer2/source/ProgressiveMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source">ProgressiveMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.Factory.html#setDrmUserAgent(java.lang.String)">setDrmUserAgent(String)</a></span> - Method in class com.google.android.exoplayer2.source.rtsp.<a href="com/google/android/exoplayer2/source/rtsp/RtspMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.rtsp">RtspMediaSource.Factory</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
@@ -32551,7 +32612,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/smoothstreaming/SsMediaSource.Factory.html#setDrmUserAgent(java.lang.String)">setDrmUserAgent(String)</a></span> - Method in class com.google.android.exoplayer2.source.smoothstreaming.<a href="com/google/android/exoplayer2/source/smoothstreaming/SsMediaSource.Factory.html" title="class in com.google.android.exoplayer2.source.smoothstreaming">SsMediaSource.Factory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/testutil/FakeMediaSourceFactory.html#setDrmUserAgent(java.lang.String)">setDrmUserAgent(String)</a></span> - Method in class com.google.android.exoplayer2.testutil.<a href="com/google/android/exoplayer2/testutil/FakeMediaSourceFactory.html" title="class in com.google.android.exoplayer2.testutil">FakeMediaSourceFactory</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
@@ -36183,7 +36246,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/SegmentBase.SingleSegmentBase.html#%3Cinit%3E(com.google.android.exoplayer2.source.dash.manifest.RangedUri,long,long,long,long)">SingleSegmentBase(RangedUri, long, long, long, long)</a></span> - Constructor for class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/SegmentBase.SingleSegmentBase.html" title="class in com.google.android.exoplayer2.source.dash.manifest">SegmentBase.SingleSegmentBase</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/Representation.SingleSegmentRepresentation.html#%3Cinit%3E(long,com.google.android.exoplayer2.Format,java.util.List,com.google.android.exoplayer2.source.dash.manifest.SegmentBase.SingleSegmentBase,java.util.List,java.lang.String,long)">SingleSegmentRepresentation(long, Format, List&lt;BaseUrl&gt;, SegmentBase.SingleSegmentBase, List&lt;Descriptor&gt;, String, long)</a></span> - Constructor for class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/Representation.SingleSegmentRepresentation.html" title="class in com.google.android.exoplayer2.source.dash.manifest">Representation.SingleSegmentRepresentation</a></dt>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/Representation.SingleSegmentRepresentation.html#%3Cinit%3E(long,com.google.android.exoplayer2.Format,java.util.List,com.google.android.exoplayer2.source.dash.manifest.SegmentBase.SingleSegmentBase,java.util.List,java.util.List,java.util.List,java.lang.String,long)">SingleSegmentRepresentation(long, Format, List&lt;BaseUrl&gt;, SegmentBase.SingleSegmentBase, List&lt;Descriptor&gt;, List&lt;Descriptor&gt;, List&lt;Descriptor&gt;, String, long)</a></span> - Constructor for class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/Representation.SingleSegmentRepresentation.html" title="class in com.google.android.exoplayer2.source.dash.manifest">Representation.SingleSegmentRepresentation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/audio/AudioSink.html#SINK_FORMAT_SUPPORTED_DIRECTLY">SINK_FORMAT_SUPPORTED_DIRECTLY</a></span> - Static variable in interface com.google.android.exoplayer2.audio.<a href="com/google/android/exoplayer2/audio/AudioSink.html" title="interface in com.google.android.exoplayer2.audio">AudioSink</a></dt>
 <dd>
@@ -36935,7 +36998,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.html#STATE_IDLE">STATE_IDLE</a></span> - Static variable in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.html" title="interface in com.google.android.exoplayer2">Player</a></dt>
 <dd>
-<div class="block">The player is idle, and must be <a href="com/google/android/exoplayer2/Player.html#prepare()"><code>prepared</code></a> before it will play the media.</div>
+<div class="block">The player is idle, meaning it holds only limited resources.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/drm/DrmSession.html#STATE_OPENED">STATE_OPENED</a></span> - Static variable in interface com.google.android.exoplayer2.drm.<a href="com/google/android/exoplayer2/drm/DrmSession.html" title="interface in com.google.android.exoplayer2.drm">DrmSession</a></dt>
 <dd>
@@ -37021,7 +37084,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Player.html#stop()">stop()</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Player.html" title="interface in com.google.android.exoplayer2">Player</a></dt>
 <dd>
-<div class="block">Stops playback without resetting the player.</div>
+<div class="block">Stops playback without resetting the playlist.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/Renderer.html#stop()">stop()</a></span> - Method in interface com.google.android.exoplayer2.<a href="com/google/android/exoplayer2/Renderer.html" title="interface in com.google.android.exoplayer2">Renderer</a></dt>
 <dd>
@@ -37403,6 +37466,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Supplemental data related to the output frame, if <a href="com/google/android/exoplayer2/decoder/Buffer.html#hasSupplementalData()"><code>Buffer.hasSupplementalData()</code></a> returns true.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/AdaptationSet.html#supplementalProperties">supplementalProperties</a></span> - Variable in class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/AdaptationSet.html" title="class in com.google.android.exoplayer2.source.dash.manifest">AdaptationSet</a></dt>
+<dd>
+<div class="block">Supplemental properties in the adaptation set.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.RepresentationInfo.html#supplementalProperties">supplementalProperties</a></span> - Variable in class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/DashManifestParser.RepresentationInfo.html" title="class in com.google.android.exoplayer2.source.dash.manifest">DashManifestParser.RepresentationInfo</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html#supplementalProperties">supplementalProperties</a></span> - Variable in class com.google.android.exoplayer2.source.dash.manifest.<a href="com/google/android/exoplayer2/source/dash/manifest/Representation.html" title="class in com.google.android.exoplayer2.source.dash.manifest">Representation</a></dt>
 <dd>
 <div class="block">Supplemental properties in the adaptation set.</div>
 </dd>
@@ -38439,7 +38508,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html#trackGroup">trackGroup</a></span> - Variable in class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionOverrides.TrackSelectionOverride</a></dt>
 <dd>
-<div class="block">The <a href="com/google/android/exoplayer2/source/TrackGroup.html" title="class in com.google.android.exoplayer2.source"><code>TrackGroup</code></a> whose <a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html#trackIndexes"><code>TrackSelectionOverrides.TrackSelectionOverride.trackIndexes</code></a> are forced to be selected.</div>
+<div class="block">The <a href="com/google/android/exoplayer2/source/TrackGroup.html" title="class in com.google.android.exoplayer2.source"><code>TrackGroup</code></a> whose <a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html#trackIndices"><code>TrackSelectionOverrides.TrackSelectionOverride.trackIndices</code></a> are forced to be selected.</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/source/TrackGroup.html" title="class in com.google.android.exoplayer2.source"><span class="typeNameLink">TrackGroup</span></a> - Class in <a href="com/google/android/exoplayer2/source/package-summary.html">com.google.android.exoplayer2.source</a></dt>
 <dd>
@@ -38471,9 +38540,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="deprecationComment">Use <a href="com/google/android/exoplayer2/offline/StreamKey.html#streamIndex"><code>StreamKey.streamIndex</code></a>.</div>
 </div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html#trackIndexes">trackIndexes</a></span> - Variable in class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionOverrides.TrackSelectionOverride</a></dt>
+<dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html#trackIndices">trackIndices</a></span> - Variable in class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionOverrides.TrackSelectionOverride</a></dt>
 <dd>
-<div class="block">The index of tracks in a <a href="com/google/android/exoplayer2/source/TrackGroup.html" title="class in com.google.android.exoplayer2.source"><code>TrackGroup</code></a> to be selected.</div>
+<div class="block">The indices of tracks in a <a href="com/google/android/exoplayer2/source/TrackGroup.html" title="class in com.google.android.exoplayer2.source"><code>TrackGroup</code></a> to be selected.</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/ui/TrackNameProvider.html" title="interface in com.google.android.exoplayer2.ui"><span class="typeNameLink">TrackNameProvider</span></a> - Interface in <a href="com/google/android/exoplayer2/ui/package-summary.html">com.google.android.exoplayer2.ui</a></dt>
 <dd>
@@ -38551,7 +38620,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html#%3Cinit%3E(com.google.android.exoplayer2.source.TrackGroup,java.util.List)">TrackSelectionOverride(TrackGroup, List&lt;Integer&gt;)</a></span> - Constructor for class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionOverrides.TrackSelectionOverride</a></dt>
 <dd>
-<div class="block">Constructs an instance to force <code>trackIndexes</code> in <code>trackGroup</code> to be selected.</div>
+<div class="block">Constructs an instance to force <code>trackIndices</code> in <code>trackGroup</code> to be selected.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/android/exoplayer2/trackselection/TrackSelectionParameters.html#trackSelectionOverrides">trackSelectionOverrides</a></span> - Variable in class com.google.android.exoplayer2.trackselection.<a href="com/google/android/exoplayer2/trackselection/TrackSelectionParameters.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionParameters</a></dt>
 <dd>
@@ -38567,7 +38636,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html" title="class in com.google.android.exoplayer2.trackselection"><span class="typeNameLink">TrackSelectionOverrides.TrackSelectionOverride</span></a> - Class in <a href="com/google/android/exoplayer2/trackselection/package-summary.html">com.google.android.exoplayer2.trackselection</a></dt>
 <dd>
-<div class="block">Forces the selection of <a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html#trackIndexes"><code>TrackSelectionOverrides.TrackSelectionOverride.trackIndexes</code></a> for a <a href="com/google/android/exoplayer2/source/TrackGroup.html" title="class in com.google.android.exoplayer2.source"><code>TrackGroup</code></a>.</div>
+<div class="block">Forces the selection of <a href="com/google/android/exoplayer2/trackselection/TrackSelectionOverrides.TrackSelectionOverride.html#trackIndices"><code>TrackSelectionOverrides.TrackSelectionOverride.trackIndices</code></a> for a <a href="com/google/android/exoplayer2/source/TrackGroup.html" title="class in com.google.android.exoplayer2.source"><code>TrackGroup</code></a>.</div>
 </dd>
 <dt><a href="com/google/android/exoplayer2/trackselection/TrackSelectionParameters.html" title="class in com.google.android.exoplayer2.trackselection"><span class="typeNameLink">TrackSelectionParameters</span></a> - Class in <a href="com/google/android/exoplayer2/trackselection/package-summary.html">com.google.android.exoplayer2.trackselection</a></dt>
 <dd>
