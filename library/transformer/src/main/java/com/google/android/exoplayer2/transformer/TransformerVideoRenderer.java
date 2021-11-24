@@ -33,18 +33,19 @@ import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
 import org.checkerframework.checker.nullness.qual.RequiresNonNull;
 
 @RequiresApi(18)
-/* package */ final class TransformerTranscodingVideoRenderer extends TransformerBaseRenderer {
+/* package */ final class TransformerVideoRenderer extends TransformerBaseRenderer {
 
   private static final String TAG = "TransformerTranscodingVideoRenderer";
 
   private final Context context;
   private final DecoderInputBuffer decoderInputBuffer;
 
+  private @MonotonicNonNull SampleTransformer slowMotionSampleTransformer;
   private @MonotonicNonNull SamplePipeline samplePipeline;
   private boolean muxerWrapperTrackAdded;
   private boolean muxerWrapperTrackEnded;
 
-  public TransformerTranscodingVideoRenderer(
+  public TransformerVideoRenderer(
       Context context,
       MuxerWrapper muxerWrapper,
       TransformerMediaClock mediaClock,
@@ -83,7 +84,7 @@ import org.checkerframework.checker.nullness.qual.RequiresNonNull;
     while (feedMuxerFromPipeline() || samplePipeline.processData() || feedPipelineFromInput()) {}
   }
 
-  /** Attempts to read the input format and to initialize the sample pipeline. */
+  /** Attempts to read the input format and to initialize the sample or passthrough pipeline. */
   @EnsuresNonNullIf(expression = "samplePipeline", result = true)
   private boolean ensureRendererConfigured() throws ExoPlaybackException {
     if (samplePipeline != null) {
@@ -96,19 +97,25 @@ import org.checkerframework.checker.nullness.qual.RequiresNonNull;
       return false;
     }
     Format decoderInputFormat = checkNotNull(formatHolder.format);
-    if (transformation.videoMimeType != null
-        && !transformation.videoMimeType.equals(decoderInputFormat.sampleMimeType)) {
+    if ((transformation.videoMimeType != null
+            && !transformation.videoMimeType.equals(decoderInputFormat.sampleMimeType))
+        || (transformation.outputHeight != Transformation.NO_VALUE
+            && transformation.outputHeight != decoderInputFormat.height)) {
       samplePipeline =
           new VideoSamplePipeline(context, decoderInputFormat, transformation, getIndex());
     } else {
       samplePipeline = new PassthroughSamplePipeline(decoderInputFormat);
     }
+    if (transformation.flattenForSlowMotion) {
+      slowMotionSampleTransformer = new SefSlowMotionVideoSampleTransformer(decoderInputFormat);
+    }
     return true;
   }
 
   /**
-   * Attempts to write sample pipeline output data to the muxer, and returns whether it may be
-   * possible to write more data immediately by calling this method again.
+   * Attempts to write sample pipeline output data to the muxer.
+   *
+   * @return Whether it may be possible to write more data immediately by calling this method again.
    */
   @RequiresNonNull("samplePipeline")
   private boolean feedMuxerFromPipeline() {
@@ -144,8 +151,15 @@ import org.checkerframework.checker.nullness.qual.RequiresNonNull;
   }
 
   /**
-   * Attempts to pass input data to the sample pipeline, and returns whether it may be possible to
-   * pass more data immediately by calling this method again.
+   * Attempts to:
+   *
+   * <ol>
+   *   <li>read input data,
+   *   <li>optionally, apply slow motion flattening, and
+   *   <li>pass input data to the sample pipeline.
+   * </ol>
+   *
+   * @return Whether it may be possible to read more data immediately by calling this method again.
    */
   @RequiresNonNull("samplePipeline")
   private boolean feedPipelineFromInput() {
@@ -158,9 +172,15 @@ import org.checkerframework.checker.nullness.qual.RequiresNonNull;
     int result = readSource(getFormatHolder(), samplePipelineInputBuffer, /* readFlags= */ 0);
     switch (result) {
       case C.RESULT_BUFFER_READ:
-        mediaClock.updateTimeForTrackType(getTrackType(), samplePipelineInputBuffer.timeUs);
-        samplePipelineInputBuffer.timeUs -= streamOffsetUs;
-        samplePipelineInputBuffer.flip();
+        if (samplePipelineInputBuffer.data != null
+            && samplePipelineInputBuffer.data.position() > 0) {
+          mediaClock.updateTimeForTrackType(getTrackType(), samplePipelineInputBuffer.timeUs);
+          samplePipelineInputBuffer.timeUs -= streamOffsetUs;
+          samplePipelineInputBuffer.flip();
+          if (slowMotionSampleTransformer != null) {
+            slowMotionSampleTransformer.transformSample(samplePipelineInputBuffer);
+          }
+        }
         samplePipeline.queueInputBuffer();
         return !samplePipelineInputBuffer.isEndOfStream();
       case C.RESULT_FORMAT_READ:
