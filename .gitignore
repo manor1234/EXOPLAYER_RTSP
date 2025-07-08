@@ -88,3 +88,6 @@ libraries/decoder_iamf/src/main/jni/libiamf
 
 # MPEG-H decoder extension
 libraries/decoder_mpegh/src/main/jni/libmpegh
+gradle/wrapper/gradle-*-all.zip
+gradle/wrapper/gradle-*-all.zip
+gradle/wrapper/gradle-*-all.zip
