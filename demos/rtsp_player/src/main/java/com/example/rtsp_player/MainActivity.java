@@ -4,39 +4,56 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText; // 添加 EditText 的导入语句
+import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.app.AlertDialog;
+import androidx.media3.common.PlaybackException;
 import android.widget.LinearLayout;
-import android.util.Log; // 用于日志输出
-import android.widget.Toast; // 用于显示提示信息
+import android.util.Log;
+import android.widget.Toast;
 
-import androidx.media3.ui.PlayerView; // ✅ 使用 AndroidX Media3 的 PlayerView
+import androidx.media3.ui.PlayerView;
 import androidx.media3.exoplayer.ExoPlayer;
 import androidx.media3.common.MediaItem;
 import androidx.media3.common.Metadata;
 import java.util.Collections;
-import androidx.media3.common.Player; // 用于播放器状态监听
-import androidx.media3.exoplayer.ExoPlaybackException; // ✅ 添加缺失的导入
+import androidx.media3.common.Player;
+import androidx.media3.exoplayer.ExoPlaybackException;
 
 import android.content.pm.ActivityInfo;
 
 public class MainActivity extends AppCompatActivity {
 
     private ExoPlayer player;
-    private PlayerView playerView;
-
-    // 替换为你自己的 RTSP 地址
-//    private static final String RTSP_URL = "rtsp://192.168.43.132:8554/test";
-    // 使用 rtspt:// 强制使用 TCP 协议
-    private static final String RTSP_URL = "rtsp://192.168.3.64:8554/test";
-
+    private PlayerView playerView; // 添加此行：声明 playerView
+    private String rtspUrl = "rtsp://192.168.3.64:8554/test"; // 将其改为成员变量
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 初始化播放器组件
+        // 初始化播放器
+        player = new ExoPlayer.Builder(this).build();
+        
+        // 确保 playerView 被正确初始化
         playerView = findViewById(R.id.player_view);
+        if (playerView == null) {
+            Log.e("MainActivity", "playerView 为 null，请检查布局文件中的 ID 是否匹配");
+        } else {
+            playerView.setPlayer(player);
+        }
+
+        // 添加播放错误监听器
+        player.addListener(new Player.Listener() {
+            @Override
+            public void onPlayerErrorChanged(PlaybackException error) {
+                if (error != null) {
+                    Toast.makeText(MainActivity.this, "播放错误: " + error.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+                    Log.e("ExoPlayer", "播放错误", error);
+                }
+            }
+        });
 
         // 设置全屏模式
         getWindow().getDecorView().setSystemUiVisibility(
@@ -69,33 +86,41 @@ public class MainActivity extends AppCompatActivity {
      * 显示输入对话框以获取 RTSP 地址
      */
     private void showRtspInputDialog() {
-        final EditText input = new EditText(this);
-        input.setInputType(android.text.InputType.TYPE_TEXT_VARIATION_URI);
-        input.setHint("输入 RTSP 地址");
+        // 加载自定义布局
+        View dialogView = getLayoutInflater().inflate(R.layout.dialog_rtsp_input, null);
+        EditText input = dialogView.findViewById(R.id.edit_text_rtsp);
+        Button buttonPlay = dialogView.findViewById(R.id.button_play);
+        Button buttonCancel = dialogView.findViewById(R.id.button_cancel);
 
-        new android.app.AlertDialog.Builder(this)
-            .setTitle("配置 RTSP 视频流地址")
-            .setView(input)
-            .setPositiveButton("播放", new android.content.DialogInterface.OnClickListener() {
-                public void onClick(android.content.DialogInterface dialog, int whichButton) {
-                    String rtspUrl = RTSP_URL;
-                    rtspUrl = input.getText().toString();
-                    if (!rtspUrl.isEmpty()) {
-                        MediaItem mediaItem = MediaItem.fromUri(rtspUrl);
-                        player.setMediaItem(mediaItem);
-                        player.prepare();
-                        player.play(); // 开始播放
-                    } else {
-                        Toast.makeText(MainActivity.this, "请输入有效的 RTSP 地址", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            })
-            .setNegativeButton("取消", new android.content.DialogInterface.OnClickListener() {
-                public void onClick(android.content.DialogInterface dialog, int which) {
-                    // 用户取消操作
-                }
-            })
-            .show();
+        // 声明并初始化 rtspUrl
+        String rtspUrl = "rtsp://192.168.3.64:8554/test"; // 默认地址，也可以从成员变量获取
+        input.setText(rtspUrl);
+
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setView(dialogView)
+                .create();
+
+        // 设置点击外部不可取消
+        dialog.setCancelable(false);
+
+        // 播放按钮逻辑
+        buttonPlay.setOnClickListener(v -> {
+            String url = input.getText().toString();
+            if (!url.isEmpty()) {
+                MediaItem mediaItem = MediaItem.fromUri(url);
+                player.setMediaItem(mediaItem);
+                player.prepare();
+                player.play();
+                dialog.dismiss();
+            } else {
+                Toast.makeText(MainActivity.this, "地址不能为空", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // 取消按钮逻辑
+        buttonCancel.setOnClickListener(v -> dialog.dismiss());
+
+        dialog.show();
     }
 
     @Override
